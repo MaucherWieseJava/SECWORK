@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phil - Daily Cybersecurity Briefing | March 24, 2026</title>
+</head>
+<body style="margin:0;padding:0;background:#f0f2f5;font-family:Arial,Helvetica,sans-serif;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background:#f0f2f5;">
+        <tr><td align="center" style="padding:24px 16px;">
+            <table width="680" cellpadding="0" cellspacing="0"
+                   style="max-width:680px;width:100%;background:#ffffff;
+                          border-radius:8px;overflow:hidden;
+                          box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+
+                <!-- Header -->
+                <tr>
+                    <td style="background:linear-gradient(135deg,#1a237e,#283593);
+                               padding:28px 32px;text-align:center;">
+                        <div style="font-size:28px;font-weight:bold;color:#ffffff;
+                                    letter-spacing:2px;">PHIL</div>
+                        <div style="font-size:14px;color:#9fa8da;margin-top:4px;">
+                            Daily Cybersecurity Briefing
+                        </div>
+                        <div style="font-size:18px;color:#ffffff;margin-top:8px;
+                                    font-weight:bold;">March 24, 2026</div>
+                    </td>
+                </tr>
+
+                <!-- Body -->
+                <tr>
+                    <td style="padding:32px;">
+                        
+    <div style="display:flex;gap:16px;margin-bottom:32px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:140px;background:#e8eaf6;border-radius:8px;
+                    padding:16px;text-align:center;">
+            <div style="font-size:28px;font-weight:bold;color:#1a237e;">14</div>
+            <div style="font-size:12px;color:#555;">New CVEs (NVD)</div>
+        </div>
+        <div style="flex:1;min-width:140px;background:#fff3e0;border-radius:8px;
+                    padding:16px;text-align:center;">
+            <div style="font-size:28px;font-weight:bold;color:#e65100;">0</div>
+            <div style="font-size:12px;color:#555;">CISA KEV Additions</div>
+        </div>
+        <div style="flex:1;min-width:140px;background:#fce4ec;border-radius:8px;
+                    padding:16px;text-align:center;">
+            <div style="font-size:28px;font-weight:bold;color:#b71c1c;">18</div>
+            <div style="font-size:12px;color:#555;">Ransomware Victims</div>
+        </div>
+    </div>
+    
+                        
+    <div style="margin-bottom:32px;">
+        <h2 style="color:#1a237e;border-bottom:2px solid #1a237e;
+                   padding-bottom:6px;font-size:20px;">New Vulnerabilities (NVD)</h2>
+        
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33174</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>7.5</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, when serving files through Active Storage's proxy delivery mode, the proxy controller loads the entire requested byte range into memory before sending it. A request with a large or unbounded Range header (e.g. `bytes=0-`) could cause the server to allocate memory proportional to the file size, possibly resulting in a DoS vulnerability through memory exhaustion. Versions 8.1.2.1, 8.0.4.1, and 7.2.3.1 contain a patch.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/rails/rails/commit/2cd933c366b777f873d4d590127da2f4a25e4ba5" style="color:#1565c0;">https://github.com/rails/rails/commit/2cd933c366b777f873d4d5...</a> | <a href="https://github.com/rails/rails/commit/42012eaaa88dfc7d0030161b2bc8074a7bbce92a" style="color:#1565c0;">https://github.com/rails/rails/commit/42012eaaa88dfc7d003016...</a> | <a href="https://github.com/rails/rails/commit/8159a9c3de3f27a2bcf2866b8bf9ceb9075e229b" style="color:#1565c0;">https://github.com/rails/rails/commit/8159a9c3de3f27a2bcf286...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33176</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>7.5</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Active Support is a toolkit of support libraries and Ruby core extensions extracted from the Rails framework. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, Active Support number helpers accept strings containing scientific notation (e.g. `1e10000`), which `BigDecimal` expands into extremely large decimal representations. This can cause excessive memory allocation and CPU consumption when the expanded number is formatted, possibly resulting in a DoS vulnerability. Versions 8.1.2.1, 8.0.4.1, and 7.2.3.1 contain a patch.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/rails/rails/commit/19dbab51ca086a657bb86458042bc44314916bcb" style="color:#1565c0;">https://github.com/rails/rails/commit/19dbab51ca086a657bb864...</a> | <a href="https://github.com/rails/rails/commit/ebd6be18120d1136511eb516338e27af25ac0a1a" style="color:#1565c0;">https://github.com/rails/rails/commit/ebd6be18120d1136511eb5...</a> | <a href="https://github.com/rails/rails/commit/ee2c59e730e5b8faed502cd2c573109df093f856" style="color:#1565c0;">https://github.com/rails/rails/commit/ee2c59e730e5b8faed502c...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33195</strong>
+            <span style="background:#d32f2f;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">CRITICAL</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>9.8</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, Active Storage's `DiskService#path_for` does not validate that the resolved filesystem path remains within the storage root directory. If a blob key containing path traversal sequences (e.g. `../`) is used, it could allow reading, writing, or deleting arbitrary files on the server. Blob keys are expected to be trusted strings, but some applications could be passing user input as keys and would be affected. Versions 8.1.2.1, 8.0.4.1, and 7.2.3.1 contain a patch.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/rails/rails/commit/4933c1e3b8c1bb04925d60347be9f69270392f2c" style="color:#1565c0;">https://github.com/rails/rails/commit/4933c1e3b8c1bb04925d60...</a> | <a href="https://github.com/rails/rails/commit/9b06fbc0f504b8afe333f33d19548f3b85fbe655" style="color:#1565c0;">https://github.com/rails/rails/commit/9b06fbc0f504b8afe333f3...</a> | <a href="https://github.com/rails/rails/commit/a290c8a1ec189d793aa6d7f2570b6a763f675348" style="color:#1565c0;">https://github.com/rails/rails/commit/a290c8a1ec189d793aa6d7...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33202</strong>
+            <span style="background:#d32f2f;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">CRITICAL</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>9.1</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, Active Storage's `DiskService#delete_prefixed` passes blob keys directly to `Dir.glob` without escaping glob metacharacters. If a blob key contains attacker-controlled input or custom-generated keys with glob metacharacters, it may be possible to delete unintended files from the storage directory. Versions 8.1.2.1, 8.0.4.1, and 7.2.3.1 contain a patch.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/rails/rails/commit/8c9676b803820110548cdb7523800db43bc6874c" style="color:#1565c0;">https://github.com/rails/rails/commit/8c9676b803820110548cdb...</a> | <a href="https://github.com/rails/rails/commit/955284d26e469a9c026a4eee5b21f0414ab0bccf" style="color:#1565c0;">https://github.com/rails/rails/commit/955284d26e469a9c026a4e...</a> | <a href="https://github.com/rails/rails/commit/fa19073546360856e9f4dab221fc2c5d73a45e82" style="color:#1565c0;">https://github.com/rails/rails/commit/fa19073546360856e9f4da...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33211</strong>
+            <span style="background:#d32f2f;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">CRITICAL</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>9.6</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Tekton Pipelines project provides k8s-style resources for declaring CI/CD-style pipelines. Starting in version 1.0.0 and prior to versions 1.0.1, 1.3.3, 1.6.1, 1.9.2, and 1.10.2, the Tekton Pipelines git resolver is vulnerable to path traversal via the `pathInRepo` parameter. A tenant with permission to create `ResolutionRequests` (e.g. by creating `TaskRuns` or `PipelineRuns` that use the git resolver) can read arbitrary files from the resolver pod's filesystem, including ServiceAccount tokens. The file contents are returned base64-encoded in `resolutionrequest.status.data`. Versions 1.0.1, 1.3.3, 1.6.1, 1.9.2, and 1.10.2 contain a patch.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/tektoncd/pipeline/commit/10fa538f9a2b6d01c75138f1ed7ba3da0e34687c" style="color:#1565c0;">https://github.com/tektoncd/pipeline/commit/10fa538f9a2b6d01...</a> | <a href="https://github.com/tektoncd/pipeline/commit/318006c4e3a5" style="color:#1565c0;">https://github.com/tektoncd/pipeline/commit/318006c4e3a5</a> | <a href="https://github.com/tektoncd/pipeline/commit/3ca7bc6e6dd1d97f80b84f78370d91edaf023cbd" style="color:#1565c0;">https://github.com/tektoncd/pipeline/commit/3ca7bc6e6dd1d97f...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33241</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>7.5</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Salvo is a Rust web framework. Prior to version 0.89.3, Salvo's form data parsing implementations (`form_data()` method and `Extractible` macro) do not enforce payload size limits before reading request bodies into memory. This allows attackers to cause Out-of-Memory (OOM) conditions by sending extremely large payloads, leading to service crashes and denial of service. Version 0.89.3 contains a patch.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/salvo-rs/salvo/releases/tag/v0.89.3" style="color:#1565c0;">https://github.com/salvo-rs/salvo/releases/tag/v0.89.3</a> | <a href="https://github.com/salvo-rs/salvo/security/advisories/GHSA-pp9r-xg4c-8j4x" style="color:#1565c0;">https://github.com/salvo-rs/salvo/security/advisories/GHSA-p...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33242</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>7.5</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Salvo is a Rust web framework. Versions 0.39.0 through 0.89.2 have a Path Traversal and Access Control Bypass vulnerability in the salvo-proxy component. The vulnerability allows an unauthenticated external attacker to bypass proxy routing constraints and access unintended backend paths (e.g., protected endpoints or administrative dashboards). This issue stems from the encode_url_path function, which fails to normalize "../" sequences and inadvertently forwards them verbatim to the upstream server by not re-encoding the "." character. Version 0.89.3 contains a patch.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/salvo-rs/salvo/commit/7bac30e6960355c58e358e402072d4a3e5c4e1bb#diff-e319bf7afcb577f7e9f4fb767005072f6335d23f306dd52e8c94f3d222610d02R20" style="color:#1565c0;">https://github.com/salvo-rs/salvo/commit/7bac30e6960355c58e3...</a> | <a href="https://github.com/salvo-rs/salvo/releases/tag/v0.89.3" style="color:#1565c0;">https://github.com/salvo-rs/salvo/releases/tag/v0.89.3</a> | <a href="https://github.com/salvo-rs/salvo/security/advisories/GHSA-f842-phm9-p4v4" style="color:#1565c0;">https://github.com/salvo-rs/salvo/security/advisories/GHSA-f...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33250</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>7.5</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Freeciv21 is a free open source, turn-based, empire-building strategy game. Versions prior to 3.1.1 crash with a stack overflow when receiving specially-crafted packets. A remote attacker can use this to take down any public server. A malicious server can use this to crash the game on the player's machine. Authentication is not needed and, by default, logs do not contain any useful information. All users should upgrade to Freeciv21 version 3.1.1. Running the server behind a firewall can help mitigate the issue for non-public servers. For local games, Freeciv21 restricts connections to the current user and is therefore not affected.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/longturn/freeciv21/commit/ad8e18ca22595529599782b2984bf44df8d69ed6" style="color:#1565c0;">https://github.com/longturn/freeciv21/commit/ad8e18ca2259552...</a> | <a href="https://github.com/longturn/freeciv21/releases/tag/v3.1.1" style="color:#1565c0;">https://github.com/longturn/freeciv21/releases/tag/v3.1.1</a> | <a href="https://github.com/longturn/freeciv21/security/advisories/GHSA-f76g-6w3f-f6r3" style="color:#1565c0;">https://github.com/longturn/freeciv21/security/advisories/GH...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33252</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>7.1</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">The Go MCP SDK used Go's standard encoding/json. Prior to version 1.4.1, the Go SDK's Streamable HTTP transport accepted browser-generated cross-site `POST` requests without validating the `Origin` header and without requiring `Content-Type: application/json`. In deployments without Authorization, especially stateless or sessionless configurations, this allows an arbitrary website to send MCP requests to a local server and potentially trigger tool execution. Version 1.4.1 contains a patch for the issue.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/modelcontextprotocol/go-sdk/commit/a433a831d6e5d5ac3b9e625a8095aa8eaa040dfc" style="color:#1565c0;">https://github.com/modelcontextprotocol/go-sdk/commit/a433a8...</a> | <a href="https://github.com/modelcontextprotocol/go-sdk/security/advisories/GHSA-89xv-2j6f-qhc8" style="color:#1565c0;">https://github.com/modelcontextprotocol/go-sdk/security/advi...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33282</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>7.5</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Ella Core is a 5G core designed for private networks. Versions prior to 1.6.0 panic when processing a malformed NGAP LocationReport message with  `ue-presence-in-area-of-interest` event type and omitting the optional `UEPresenceInAreaOfInterestList` IE. An attacker able to send crafted NGAP messages to Ella Core can crash the process, causing service disruption for all connected subscribers. No authentication is required. Version 1.6.0 added IE presence verification to NGAP message handling.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/ellanetworks/core/security/advisories/GHSA-826q-wrq4-p23x" style="color:#1565c0;">https://github.com/ellanetworks/core/security/advisories/GHS...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-33286</strong>
+            <span style="background:#d32f2f;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">CRITICAL</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>9.1</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">Graphiti is a framework that sits on top of models and exposes them via a JSON:API-compliant interface. Versions prior to 1.10.2 have an arbitrary method execution vulnerability that affects Graphiti's JSONAPI write functionality. An attacker can craft a malicious JSONAPI payload with arbitrary relationship names to invoke any public method on the underlying model instance, class or its associations. Any application exposing Graphiti write endpoints (create/update/delete) to untrusted users is affected. The `Graphiti::Util::ValidationResponse#all_valid?` method recursively calls `model.send(name)` using relationship names taken directly from user-supplied JSONAPI payloads, without validating them against the resource's configured sideloads. This allows an attacker to potentially run any public method on a given model instance, on the instance class or associated instances or classes, including destructive operations. This is patched in Graphiti v1.10.2. Users should upgrade as soon as possible. Some workarounds are available. Ensure Graphiti write endpoints (create/update) are not accessible to untrusted users and/or apply strong authentication and authorization checks before any write operation is processed, for example use Rails strong parameters to ensure only valid parameters are processed.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://github.com/graphiti-api/graphiti/commit/ddb5ad2b69330774bd1a47935ed89a9fe4396a54" style="color:#1565c0;">https://github.com/graphiti-api/graphiti/commit/ddb5ad2b6933...</a> | <a href="https://github.com/graphiti-api/graphiti/releases/tag/v1.10.2" style="color:#1565c0;">https://github.com/graphiti-api/graphiti/releases/tag/v1.10....</a> | <a href="https://github.com/graphiti-api/graphiti/security/advisories/GHSA-3m5v-4xp5-gjg2" style="color:#1565c0;">https://github.com/graphiti-api/graphiti/security/advisories...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-3533</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>8.8</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">The Jupiter X Core plugin for WordPress is vulnerable to limited file uploads due to missing authorization on import_popup_templates() function as well as insufficient file type validation in the upload_files() function in all versions up to, and including, 4.14.1. This makes it possible for Authenticated attackers with Subscriber-level access and above, to upload files with dangerous types that can lead to Remote Code Execution on servers configured to handle .phar files as executable PHP (e.g., Apache+mod_php), or Stored Cross-Site Scripting via .svg, .dfxp, or .xhtml files upload on any server configuration</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/includes/control-panel-2/includes/class-popup.php?rev=3430169#138" style="color:#1565c0;">https://plugins.trac.wordpress.org/browser/jupiterx-core/tru...</a> | <a href="https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/includes/extensions/raven/includes/modules/forms/classes/ajax-handler.php?rev=3430169#L434" style="color:#1565c0;">https://plugins.trac.wordpress.org/browser/jupiterx-core/tru...</a> | <a href="https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/includes/extensions/raven/includes/modules/forms/fields/file.php?rev=3430169#L214" style="color:#1565c0;">https://plugins.trac.wordpress.org/browser/jupiterx-core/tru...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-4001</strong>
+            <span style="background:#d32f2f;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">CRITICAL</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>9.8</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">The Woocommerce Custom Product Addons Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 5.4.1 via the custom pricing formula eval() in the process_custom_formula() function within includes/process/price.php. This is due to insufficient sanitization and validation of user-submitted field values before passing them to PHP's eval() function. The sanitize_values() method strips HTML tags but does not escape single quotes or prevent PHP code injection. This makes it possible for unauthenticated attackers to execute arbitrary code on the server by submitting a crafted value to a WCPA text field configured with custom pricing formula (pricingType: "custom" with {this.value}).</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://acowebs.com/woo-custom-product-addons/" style="color:#1565c0;">https://acowebs.com/woo-custom-product-addons/</a> | <a href="https://www.wordfence.com/threat-intel/vulnerabilities/id/70a2b6ff-defc-4722-9af9-3cae94e98632?source=cve" style="color:#1565c0;">https://www.wordfence.com/threat-intel/vulnerabilities/id/70...</a></div>
+    </div>
+    
+    <div style="background:#f5f5f5;border-left:4px solid #1a237e;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <strong style="font-size:14px;color:#1a237e;">CVE-2026-4021</strong>
+            <span style="background:#f57c00;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+            <span style="font-size:12px;color:#555;">CVSS: <strong>8.1</strong></span>
+        </div>
+        <div style="font-size:13px;color:#333;">The Contest Gallery plugin for WordPress is vulnerable to an authentication bypass leading to admin account takeover in all versions up to, and including, 28.1.5. This is due to the email confirmation handler in `users-registry-check-after-email-or-pin-confirmation.php` using the user's email string in a `WHERE ID = %s` clause instead of the numeric user ID, combined with an unauthenticated key-based login endpoint in `ajax-functions-frontend.php`. When the non-default `RegMailOptional=1` setting is enabled, an attacker can register with a crafted email starting with the target user ID (e.g., `1poc@example.test`), trigger the confirmation flow to overwrite the admin's `user_activation_key` via MySQL integer coercion, and then use the `post_cg1l_login_user_by_key` AJAX action to authenticate as the admin without any credentials. This makes it possible for unauthenticated attackers to take over any WordPress administrator account and gain full site control.</div>
+        <div style="margin-top:6px;font-size:12px;">Refs: <a href="https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28.1.4/ajax/ajax-functions-frontend.php#L204" style="color:#1565c0;">https://plugins.trac.wordpress.org/browser/contest-gallery/t...</a> | <a href="https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28.1.4/v10/v10-admin/users/frontend/registry/users-registry-check-after-email-or-pin-confirmation.php#L153" style="color:#1565c0;">https://plugins.trac.wordpress.org/browser/contest-gallery/t...</a> | <a href="https://plugins.trac.wordpress.org/browser/contest-gallery/trunk/ajax/ajax-functions-frontend.php#L204" style="color:#1565c0;">https://plugins.trac.wordpress.org/browser/contest-gallery/t...</a></div>
+    </div>
+    
+    </div>
+    
+                        
+    <div style="margin-bottom:32px;">
+        <h2 style="color:#1a237e;border-bottom:2px solid #1a237e;
+                   padding-bottom:6px;font-size:20px;">CISA Known Exploited Vulnerabilities</h2>
+        <p style="color:#888;">No new CISA KEV entries for this date.</p>
+    </div>
+    
+                        
+    <div style="margin-bottom:32px;">
+        <h2 style="color:#1a237e;border-bottom:2px solid #1a237e;
+                   padding-bottom:6px;font-size:20px;">Ransomware Victims &mdash; 18 victim(s) reported</h2>
+        
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Healthcare</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:29:22.035892
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">N/A</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Business Services</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:27:24.729405
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">United States</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Hospitality and Tourism</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:26:47.517403
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">United States</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Financial Services</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:25:47.913100
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">United States</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Healthcare</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:25:02.090019
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">United States</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Technology</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:24:15.337531
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">United States</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Construction</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:23:35.957864
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">United States</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Not Found</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:53:52.979868
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">Cerboni specializes in providing expert bookkeeping, tax, and CFO services tailored for the restaurant and hospitality industries, while also serving a diverse range of sectors including retail, healt...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>LU</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Not Found</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 14:07:26.764620
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">Founded in Lansing more than 11 years ago by Dowling, M3 Group prides itself on being the only local agency that offers the most comprehensive array of integrated branding, marketing and advertising s...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Education</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:52:44.929327
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">The Jennings School District strives to provide students with learning experiences and opportunities that prepare the company's students for college and careers and for the 21st century. The company i...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>AR</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Not Found</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 08:48:37.748276
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">[AI generated] Estudio O'Farrell is a prestigious law firm based in Buenos Aires, Argentina. Known for its comprehensive legal services, the firm specializes in areas such as corporate law, tax law, b...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong></strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Business Services</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 12:58:16.834841
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">The Russell's Law Firm specializes in personal injury, wrongful d
+eath, criminal defense, and DUI cases, offering expert legal repr
+esentation for their clients. They aim to support individuals who
+ha...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Not Found</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 13:59:31.319751
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">Gustavo Preston Company specializes in designing, selling, and se
+rvicing commercial pump solutions, including water boosters, wast
+ewater pumps, and circulator pumps. They offer a range of product
+s ...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>FR</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Manufacturing</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 13:59:35.498675
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">French Engineering offers a range of services in Traffic Engineer
+ing, Water Resources Engineering, and Sustainable Planning and De
+sign Consulting in Pennsylvania, West Virginia, and Maryland. The
+ir...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong>US</strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Business Services</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 15:35:26.223219
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">Mooers Immigration is dedicated to the practice of immigration an
+d nationality law, offering services such as employment-based and
+family-based immigration, naturalization, and strategic complian
+ce ...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong></strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Manufacturing</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 15:35:32.365214
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">We obtained about 17gb of data of the following companies:
+
+JConcord Components, Inc. was founded in 1995 in Concord, Nebrask
+a as a retail catalog company, supplying hard-to-find electronic 
+componen...</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong></strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Consumer Services</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:28:37.244753
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">N/A</div>
+    </div>
+    
+    <div style="background:#fce4ec;border-left:4px solid #b71c1c;
+                padding:12px 16px;margin-bottom:12px;border-radius:4px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+                <strong style="font-size:14px;color:#b71c1c;">N/A</strong>
+                &nbsp;
+                <span style="font-size:12px;background:#b71c1c;color:#fff;
+                             padding:1px 6px;border-radius:3px;">N/A</span>
+            </div>
+            
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">
+            Country: <strong></strong>
+            &nbsp;&bull;&nbsp; Sector: <strong>Not Found</strong>
+            &nbsp;&bull;&nbsp; Discovered: 2026-03-24 19:26:08.030596
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:4px;">United States</div>
+    </div>
+    
+    </div>
+    
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td style="background:#1a237e;padding:16px 32px;text-align:center;">
+                        <div style="font-size:11px;color:#9fa8da;">
+                            Generated by Phil &bull; March 24, 2026 &bull;
+                            Sources: NVD, CISA KEV, ransomware.live
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </td></tr>
+    </table>
+</body>
+</html>
