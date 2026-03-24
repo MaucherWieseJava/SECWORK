@@ -39,7 +39,7 @@ def send_email(html: str, subject: str, recipients: list[str]) -> None:
 
 def save_html(html: str, date: datetime) -> str:
     """Save the HTML report to a file and return the path."""
-    filename = f"phil_briefing_{date.strftime('%Y-%m-%d')}.html"
+    filename = f"aditi_briefing_{date.strftime('%Y-%m-%d')}.html"
     output_path = os.path.join(os.path.dirname(__file__), filename)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
@@ -48,7 +48,7 @@ def save_html(html: str, date: datetime) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Phil — Daily Cybersecurity Briefing Generator"
+        description="AdiTI — Daily Cybersecurity Briefing Generator"
     )
     parser.add_argument(
         "--date",
@@ -71,8 +71,8 @@ def main() -> None:
     parser.add_argument(
         "--max-cves",
         type=int,
-        default=20,
-        help="Maximum number of CVEs to fetch from NVD (default: 20)",
+        default=50,
+        help="Maximum number of CVEs to fetch from NVD (default: 50)",
     )
     args = parser.parse_args()
 
@@ -83,18 +83,18 @@ def main() -> None:
         target_date = datetime.now(tz=timezone.utc)
 
     date_str = target_date.strftime("%Y-%m-%d")
-    print(f"[phil] Generating briefing for {date_str} ...")
+    print(f"[aditi] Generating briefing for {date_str} ...")
 
     # Fetch data
-    print("[phil] Fetching NVD CVEs ...")
+    print("[aditi] Fetching NVD CVEs ...")
     nvd_cves = fetch_nvd_cves(target_date, max_results=args.max_cves)
     print(f"       {len(nvd_cves)} CVE(s) found.")
 
-    print("[phil] Fetching CISA KEV additions ...")
+    print("[aditi] Fetching CISA KEV additions ...")
     kev_vulns = fetch_cisa_kev_recent(target_date)
     print(f"       {len(kev_vulns)} KEV addition(s) found.")
 
-    print("[phil] Fetching ransomware victims ...")
+    print("[aditi] Fetching ransomware victims ...")
     victims = fetch_ransomware_victims(target_date)
     print(f"       {len(victims)} victim(s) found.")
 
@@ -104,14 +104,14 @@ def main() -> None:
     # Save to disk
     if not args.no_save:
         path = save_html(html, target_date)
-        print(f"[phil] Report saved to: {path}")
+        print(f"[aditi] Report saved to: {path}")
 
     # Send email
     if args.send:
-        subject = f"Phil Cybersecurity Briefing — {date_str}"
+        subject = f"AdiTI Cybersecurity Briefing — {date_str}"
         send_email(html, subject, args.send)
 
-    print("[phil] Done.")
+    print("[aditi] Done.")
 
 
 if __name__ == "__main__":

@@ -1,3 +1,4 @@
+import os
 import requests
 from datetime import datetime, timezone
 
@@ -6,8 +7,8 @@ NVD_API_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
 
-def fetch_nvd_cves(date: datetime, max_results: int = 20) -> list[dict]:
-    """Fetch CVEs published on a specific date from the NVD API."""
+def fetch_nvd_cves(date: datetime, max_results: int = 50) -> list[dict]:
+    """Fetch CVEs published on a specific date from the NVD API, sorted by CVSS score."""
     start = date.strftime("%Y-%m-%dT00:00:00.000")
     end = date.strftime("%Y-%m-%dT23:59:59.999")
 
@@ -17,8 +18,14 @@ def fetch_nvd_cves(date: datetime, max_results: int = 20) -> list[dict]:
         "resultsPerPage": max_results,
     }
 
+    # Use NVD API key if available (higher rate limit)
+    api_key = os.environ.get("NVD_API_KEY")
+    headers = {}
+    if api_key:
+        headers["apiKey"] = api_key
+
     try:
-        response = requests.get(NVD_API_URL, params=params, timeout=15)
+        response = requests.get(NVD_API_URL, params=params, headers=headers, timeout=30)
         response.raise_for_status()
         data = response.json()
         vulnerabilities = []
@@ -44,21 +51,27 @@ def fetch_nvd_cves(date: datetime, max_results: int = 20) -> list[dict]:
                     severity = cvss_data.get("baseSeverity", "N/A")
                     break
 
-            references = [
-                ref.get("url") for ref in cve.get("references", [])[:3]
-            ]
-
             if severity.upper() not in ("HIGH", "CRITICAL"):
                 continue
+
+            nvd_url = f"https://nvd.nist.gov/vuln/detail/{cve_id}"
+            extra_refs = [
+                ref.get("url") for ref in cve.get("references", [])
+                if ref.get("url") and "github.com" not in ref.get("url", "")
+            ][:2]
+            references = [nvd_url] + extra_refs
 
             vulnerabilities.append({
                 "id": cve_id,
                 "description": description,
                 "cvss_score": cvss_score,
-                "severity": severity,
+                "severity": severity.upper(),
                 "references": references,
                 "published": cve.get("published", ""),
             })
+
+        # Sort by CVSS score descending (Critical first, then High)
+        vulnerabilities.sort(key=lambda v: v["cvss_score"] or 0, reverse=True)
 
         return vulnerabilities
 
@@ -68,7 +81,7 @@ def fetch_nvd_cves(date: datetime, max_results: int = 20) -> list[dict]:
 
 
 def fetch_cisa_kev_recent(date: datetime) -> list[dict]:
-    """Fetch CISA Known Exploited Vulnerabilities added on a specific date."""
+    """Fetch CISA Known Exploited Vulnerabilities added on a specific date, sorted by due date."""
     try:
         response = requests.get(CISA_KEV_URL, timeout=15)
         response.raise_for_status()
@@ -87,6 +100,9 @@ def fetch_cisa_kev_recent(date: datetime) -> list[dict]:
                     "due_date": vuln.get("dueDate", "N/A"),
                     "action": vuln.get("requiredAction", "N/A"),
                 })
+
+        # Sort by due date ascending (most urgent first)
+        results.sort(key=lambda v: v["due_date"])
 
         return results
 
