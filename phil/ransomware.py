@@ -1,6 +1,6 @@
-import requests
-from collections import Counter
 from datetime import datetime
+
+from http_client import get_session
 
 
 RANSOMWARE_LIVE_URL = "https://api.ransomware.live/v1/recentvictims"
@@ -10,8 +10,9 @@ def fetch_ransomware_victims(date: datetime) -> list[dict]:
     """Fetch ransomware victims posted on a specific date from ransomware.live."""
     target_date = date.strftime("%Y-%m-%d")
 
+    session = get_session()
     try:
-        response = requests.get(RANSOMWARE_LIVE_URL, timeout=30)
+        response = session.get(RANSOMWARE_LIVE_URL, timeout=60)
         response.raise_for_status()
         data = response.json()
 
@@ -46,6 +47,6 @@ def fetch_ransomware_victims(date: datetime) -> list[dict]:
 
         return victims
 
-    except requests.RequestException as e:
+    except Exception as e:
         print(f"[ransomware] ransomware.live API error: {e}")
         return []

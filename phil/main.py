@@ -1,7 +1,7 @@
 import os
 import smtplib
 import argparse
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -54,7 +54,7 @@ def main() -> None:
         "--date",
         type=str,
         default=None,
-        help="Target date in YYYY-MM-DD format (default: today)",
+        help="Target date in YYYY-MM-DD format (default: yesterday)",
     )
     parser.add_argument(
         "--send",
@@ -80,7 +80,7 @@ def main() -> None:
     if args.date:
         target_date = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
     else:
-        target_date = datetime.now(tz=timezone.utc)
+        target_date = datetime.now(tz=timezone.utc) - timedelta(days=1)
 
     date_str = target_date.strftime("%Y-%m-%d")
     print(f"[aditi] Generating briefing for {date_str} ...")

@@ -1,6 +1,7 @@
 import os
-import requests
 from datetime import datetime, timezone
+
+from http_client import get_session
 
 
 NVD_API_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
@@ -24,8 +25,9 @@ def fetch_nvd_cves(date: datetime, max_results: int = 50) -> list[dict]:
     if api_key:
         headers["apiKey"] = api_key
 
+    session = get_session()
     try:
-        response = requests.get(NVD_API_URL, params=params, headers=headers, timeout=30)
+        response = session.get(NVD_API_URL, params=params, headers=headers, timeout=60)
         response.raise_for_status()
         data = response.json()
         vulnerabilities = []
@@ -75,15 +77,16 @@ def fetch_nvd_cves(date: datetime, max_results: int = 50) -> list[dict]:
 
         return vulnerabilities
 
-    except requests.RequestException as e:
+    except Exception as e:
         print(f"[vulnerabilities] NVD API error: {e}")
         return []
 
 
 def fetch_cisa_kev_recent(date: datetime) -> list[dict]:
     """Fetch CISA Known Exploited Vulnerabilities added on a specific date, sorted by due date."""
+    session = get_session()
     try:
-        response = requests.get(CISA_KEV_URL, timeout=15)
+        response = session.get(CISA_KEV_URL, timeout=60)
         response.raise_for_status()
         data = response.json()
 
@@ -106,6 +109,6 @@ def fetch_cisa_kev_recent(date: datetime) -> list[dict]:
 
         return results
 
-    except requests.RequestException as e:
+    except Exception as e:
         print(f"[vulnerabilities] CISA KEV error: {e}")
         return []
