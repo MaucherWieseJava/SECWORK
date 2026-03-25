@@ -1,0 +1,1718 @@
+From: =?utf-8?Q?Adrian_Alois_St=C3=B6tzler?= <adrian.stlo@icloud.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_C0CBAFC1-C278-4D37-BDC6-85B127E0D4D8"
+Mime-Version: 1.0 (Mac OS X Mail 16.0 \(3864.400.21\))
+Subject: Break
+X-Universally-Unique-Identifier: EF145D11-027F-4B76-94AA-370E0A655E65
+Message-Id: <A8D15345-8CD8-420E-88C1-531DE4C79999@icloud.com>
+Date: Tue, 24 Mar 2026 22:16:59 +0100
+To: adrian@stoetzler.de
+
+
+--Apple-Mail=_C0CBAFC1-C278-4D37-BDC6-85B127E0D4D8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+
+CISO TEAM
+Daily Cybersecurity Briefing
+March 24, 2026
+31
+New CVEs
+5 Critical =E2=80=A2 26 High
+0
+CISA KEV Additions
+Actively Exploited
+19
+Ransomware Victims
+7 Active Group(s)
+New Vulnerabilities (NVD)
+Sorted by CVSS score  =E2=80=A2  5 Critical, 26 High  =E2=80=A2  =
+Highest: 9.8
+CVE-2026-33195   CRITICAL   CVSS: 9.8
+Active Storage allows users to attach cloud and local files in Rails =
+applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, Active =
+Storage's `DiskService#path_for` does not validate that the resolved =
+filesystem path remains within the storage root directory. If a blob key =
+containing path ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33195
+CVE-2026-4001   CRITICAL   CVSS: 9.8
+The Woocommerce Custom Product Addons Pro plugin for WordPress is =
+vulnerable to Remote Code Execution in all versions up to, and =
+including, 5.4.1 via the custom pricing formula eval() in the =
+process_custom_formula() function within includes/process/price.php. =
+This is due to insufficient ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-4001  |  =
+https://acowebs.com/woo-custom-product-addons/  |  =
+https://www.wordfence.com/threat-intel/vulnerabilities/id/70a2b6ff-def... =
+<https://www.wordfence.com/threat-intel/vulnerabilities/id/70a2b6ff-defc-4=
+722-9af9-3cae94e98632?source=3Dcve>
+CVE-2026-33211   CRITICAL   CVSS: 9.6
+Tekton Pipelines project provides k8s-style resources for declaring =
+CI/CD-style pipelines. Starting in version 1.0.0 and prior to versions =
+1.0.1, 1.3.3, 1.6.1, 1.9.2, and 1.10.2, the Tekton Pipelines git =
+resolver is vulnerable to path traversal via the `pathInRepo` parameter. =
+A tenant with ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33211
+CVE-2026-33202   CRITICAL   CVSS: 9.1
+Active Storage allows users to attach cloud and local files in Rails =
+applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, Active =
+Storage's `DiskService#delete_prefixed` passes blob keys directly to =
+`Dir.glob` without escaping glob metacharacters. If a blob key contains =
+attacker-controlled ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33202
+CVE-2026-33286   CRITICAL   CVSS: 9.1
+Graphiti is a framework that sits on top of models and exposes them via =
+a JSON:API-compliant interface. Versions prior to 1.10.2 have an =
+arbitrary method execution vulnerability that affects Graphiti's JSONAPI =
+write functionality. An attacker can craft a malicious JSONAPI payload =
+with arbitrary ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33286
+CVE-2026-3533   HIGH   CVSS: 8.8
+The Jupiter X Core plugin for WordPress is vulnerable to limited file =
+uploads due to missing authorization on import_popup_templates() =
+function as well as insufficient file type validation in the =
+upload_files() function in all versions up to, and including, 4.14.1. =
+This makes it possible for ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-3533  |  =
+https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/include... =
+<https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/includes/c=
+ontrol-panel-2/includes/class-popup.php?rev=3D3430169#138>  |  =
+https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/include... =
+<https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/includes/e=
+xtensions/raven/includes/modules/forms/classes/ajax-handler.php?rev=3D3430=
+169#L434>
+CVE-2026-4673   HIGH   CVSS: 8.8
+Heap buffer overflow in WebAudio in Google Chrome prior to =
+146.0.7680.165 allowed a remote attacker to perform an out of bounds =
+memory write via a crafted HTML page. (Chromium security severity: High)
+https://nvd.nist.gov/vuln/detail/CVE-2026-4673  |  =
+https://chromereleases.googleblog.com/2026/03/stable-channel-update-fo... =
+<https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-d=
+esktop_23.html>  |  https://issues.chromium.org/issues/485397284
+CVE-2026-4674   HIGH   CVSS: 8.8
+Out of bounds read in CSS in Google Chrome prior to 146.0.7680.165 =
+allowed a remote attacker to perform out of bounds memory access via a =
+crafted HTML page. (Chromium security severity: High)
+https://nvd.nist.gov/vuln/detail/CVE-2026-4674  |  =
+https://chromereleases.googleblog.com/2026/03/stable-channel-update-fo... =
+<https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-d=
+esktop_23.html>  |  https://issues.chromium.org/issues/488188166
+CVE-2026-4675   HIGH   CVSS: 8.8
+Heap buffer overflow in WebGL in Google Chrome prior to 146.0.7680.165 =
+allowed a remote attacker to perform an out of bounds memory read via a =
+crafted HTML page. (Chromium security severity: High)
+https://nvd.nist.gov/vuln/detail/CVE-2026-4675  |  =
+https://chromereleases.googleblog.com/2026/03/stable-channel-update-fo... =
+<https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-d=
+esktop_23.html>  |  https://issues.chromium.org/issues/488270257
+CVE-2026-4676   HIGH   CVSS: 8.8
+Use after free in Dawn in Google Chrome prior to 146.0.7680.165 allowed =
+a remote attacker to potentially perform a sandbox escape via a crafted =
+HTML page. (Chromium security severity: High)
+https://nvd.nist.gov/vuln/detail/CVE-2026-4676  |  =
+https://chromereleases.googleblog.com/2026/03/stable-channel-update-fo... =
+<https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-d=
+esktop_23.html>  |  https://issues.chromium.org/issues/488613135
+CVE-2026-4677   HIGH   CVSS: 8.8
+Inappropriate implementation in WebAudio in Google Chrome prior to =
+146.0.7680.165 allowed a remote attacker to perform an out of bounds =
+memory read via a crafted HTML page. (Chromium security severity: High)
+https://nvd.nist.gov/vuln/detail/CVE-2026-4677  |  =
+https://chromereleases.googleblog.com/2026/03/stable-channel-update-fo... =
+<https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-d=
+esktop_23.html>  |  https://issues.chromium.org/issues/490533968
+CVE-2026-4678   HIGH   CVSS: 8.8
+Use after free in WebGPU in Google Chrome prior to 146.0.7680.165 =
+allowed a remote attacker to execute arbitrary code inside a sandbox via =
+a crafted HTML page. (Chromium security severity: High)
+https://nvd.nist.gov/vuln/detail/CVE-2026-4678  |  =
+https://chromereleases.googleblog.com/2026/03/stable-channel-update-fo... =
+<https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-d=
+esktop_23.html>  |  https://issues.chromium.org/issues/491164019
+CVE-2026-4679   HIGH   CVSS: 8.8
+Integer overflow in Fonts in Google Chrome prior to 146.0.7680.165 =
+allowed a remote attacker to perform an out of bounds memory write via a =
+crafted HTML page. (Chromium security severity: High)
+https://nvd.nist.gov/vuln/detail/CVE-2026-4679  |  =
+https://chromereleases.googleblog.com/2026/03/stable-channel-update-fo... =
+<https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-d=
+esktop_23.html>  |  https://issues.chromium.org/issues/491516670
+CVE-2026-4680   HIGH   CVSS: 8.8
+Use after free in FedCM in Google Chrome prior to 146.0.7680.165 allowed =
+a remote attacker to execute arbitrary code inside a sandbox via a =
+crafted HTML page. (Chromium security severity: High)
+https://nvd.nist.gov/vuln/detail/CVE-2026-4680  |  =
+https://chromereleases.googleblog.com/2026/03/stable-channel-update-fo... =
+<https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-d=
+esktop_23.html>  |  https://issues.chromium.org/issues/491869946
+CVE-2026-22739   HIGH   CVSS: 8.6
+Vulnerability in Spring Cloud when substituting the profile parameter =
+from a request made to the Spring Cloud Config Server configured to the =
+native file system as a backend, because it was possible to access files =
+outside of the configured search directories.This issue affects Spring =
+Cloud: from ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-22739  |  =
+https://spring.io/security/cve-2026-22739
+CVE-2026-4021   HIGH   CVSS: 8.1
+The Contest Gallery plugin for WordPress is vulnerable to an =
+authentication bypass leading to admin account takeover in all versions =
+up to, and including, 28.1.5. This is due to the email confirmation =
+handler in `users-registry-check-after-email-or-pin-confirmation.php` =
+using the user's email ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-4021  |  =
+https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28.1.4... =
+<https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28.1.4/aj=
+ax/ajax-functions-frontend.php#L204>  |  =
+https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28.1.4... =
+<https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28.1.4/v1=
+0/v10-admin/users/frontend/registry/users-registry-check-after-email-or-pi=
+n-confirmation.php#L153>
+CVE-2026-33298   HIGH   CVSS: 7.8
+llama.cpp is an inference of several LLM models in C/C++. Prior to =
+b7824, an integer overflow vulnerability in the `ggml_nbytes` function =
+allows an attacker to bypass memory validation by crafting a GGUF file =
+with specific tensor dimensions. This causes `ggml_nbytes` to return a =
+significantly ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33298
+CVE-2026-33174   HIGH   CVSS: 7.5
+Active Storage allows users to attach cloud and local files in Rails =
+applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, when =
+serving files through Active Storage's proxy delivery mode, the proxy =
+controller loads the entire requested byte range into memory before =
+sending it. A request ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33174
+CVE-2026-33176   HIGH   CVSS: 7.5
+Active Support is a toolkit of support libraries and Ruby core =
+extensions extracted from the Rails framework. Prior to versions =
+8.1.2.1, 8.0.4.1, and 7.2.3.1, Active Support number helpers accept =
+strings containing scientific notation (e.g. `1e10000`), which =
+`BigDecimal` expands into extremely ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33176
+CVE-2026-33241   HIGH   CVSS: 7.5
+Salvo is a Rust web framework. Prior to version 0.89.3, Salvo's form =
+data parsing implementations (`form_data()` method and `Extractible` =
+macro) do not enforce payload size limits before reading request bodies =
+into memory. This allows attackers to cause Out-of-Memory (OOM) =
+conditions by sending ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33241
+CVE-2026-33242   HIGH   CVSS: 7.5
+Salvo is a Rust web framework. Versions 0.39.0 through 0.89.2 have a =
+Path Traversal and Access Control Bypass vulnerability in the =
+salvo-proxy component. The vulnerability allows an unauthenticated =
+external attacker to bypass proxy routing constraints and access =
+unintended backend paths (e.g., ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33242
+CVE-2026-33250   HIGH   CVSS: 7.5
+Freeciv21 is a free open source, turn-based, empire-building strategy =
+game. Versions prior to 3.1.1 crash with a stack overflow when receiving =
+specially-crafted packets. A remote attacker can use this to take down =
+any public server. A malicious server can use this to crash the game on =
+the player's ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33250  |  =
+https://redmine.freeciv.org/issues/1955
+CVE-2026-33282   HIGH   CVSS: 7.5
+Ella Core is a 5G core designed for private networks. Versions prior to =
+1.6.0 panic when processing a malformed NGAP LocationReport message with =
+`ue-presence-in-area-of-interest` event type and omitting the optional =
+`UEPresenceInAreaOfInterestList` IE. An attacker able to send crafted =
+NGAP ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33282
+CVE-2026-33307   HIGH   CVSS: 7.5
+Mod_gnutls is a TLS module for Apache HTTPD based on GnuTLS. In versions =
+prior to 0.12.3 and 0.13.0, code for client certificate verification =
+imported the certificate chain sent by the client into a fixed size =
+`gnutls_x509_crt_t x509[]` array without checking the number of =
+certificates is less than ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33307
+CVE-2026-4613   HIGH   CVSS: 7.3
+A vulnerability was found in SourceCodester E-Commerce Site 1.0. This =
+vulnerability affects unknown code of the file /products.php. The =
+manipulation of the argument Search results in sql injection. The attack =
+can be executed remotely. The exploit has been made public and could be =
+used.
+https://nvd.nist.gov/vuln/detail/CVE-2026-4613  |  =
+https://vuldb.com/?ctiid.352477  |  https://vuldb.com/?id.352477
+CVE-2026-4615   HIGH   CVSS: 7.3
+A vulnerability was identified in SourceCodester Online Catering =
+Reservation 1.0. Impacted is an unknown function of the file =
+/search.php. Such manipulation of the argument rcode leads to sql =
+injection. The attack may be performed from remote. The exploit is =
+publicly available and might be used.
+https://nvd.nist.gov/vuln/detail/CVE-2026-4615  |  =
+https://vuldb.com/?ctiid.352479  |  https://vuldb.com/?id.352479
+CVE-2026-4617   HIGH   CVSS: 7.3
+A weakness has been identified in SourceCodester Patients Waiting Area =
+Queue Management System 1.0. The impacted element is the function =
+ValidateToken of the file /php/api_patient_checkin.php of the component =
+Patient Check-In Module. Executing a manipulation can lead to improper =
+authorization. It ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-4617  |  =
+https://vuldb.com/?ctiid.352481  |  https://vuldb.com/?id.352481
+CVE-2026-4623   HIGH   CVSS: 7.3
+A security vulnerability has been detected in DefaultFuction =
+Jeson-Customer-Relationship-Management-System up to =
+1b4679c4d06b90d31dd521c2b000bfdec5a36e00. This affects an unknown =
+function of the file /api/System.php of the component API Module. The =
+manipulation of the argument url leads to ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-4623  |  =
+https://vuldb.com/?ctiid.352482  |  https://vuldb.com/?id.352482
+CVE-2026-4624   HIGH   CVSS: 7.3
+A vulnerability was detected in SourceCodester Online Library Management =
+System 1.0. The impacted element is an unknown function of the file =
+/home.php of the component Parameter Handler. Performing a manipulation =
+of the argument searchField results in sql injection. The attack can be =
+initiated ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-4624  |  =
+https://vuldb.com/?ctiid.352492  |  https://vuldb.com/?id.352492
+CVE-2026-4625   HIGH   CVSS: 7.3
+A flaw has been found in SourceCodester Online Admission System 1.0. =
+This affects an unknown function of the file /programmes.php. Executing =
+a manipulation of the argument program can lead to sql injection. The =
+attack can be launched remotely. The exploit has been published and may =
+be used.
+https://nvd.nist.gov/vuln/detail/CVE-2026-4625  |  =
+https://vuldb.com/?ctiid.352493  |  https://vuldb.com/?id.352493
+CVE-2026-33252   HIGH   CVSS: 7.1
+The Go MCP SDK used Go's standard encoding/json. Prior to version 1.4.1, =
+the Go SDK's Streamable HTTP transport accepted browser-generated =
+cross-site `POST` requests without validating the `Origin` header and =
+without requiring `Content-Type: application/json`. In deployments =
+without Authorization, ...
+https://nvd.nist.gov/vuln/detail/CVE-2026-33252
+CISA Known Exploited Vulnerabilities
+No new CISA KEV entries for this date.
+
+Ransomware Victims =E2=80=94 19 victim(s) reported
+7 active group(s)  =E2=80=A2  Top targets: US (12), FR (1), AR (1), LU =
+(1)
+AKIRA =E2=80=94 5 victim(s)
+The Russell's Law Firm  akira=09
+Sector: Business Services  =E2=80=A2  Discovered: 2026-03-24 12:58:16
+The Russell's Law Firm specializes in personal injury, wrongful d eath, =
+criminal defense, and DUI cases, offering expert legal repr esentation =
+for their clients. They aim to support individuals ...
+Gustavo Preston  akira=09
+Country: US  =E2=80=A2  Sector: Not Found  =E2=80=A2  Discovered: =
+2026-03-24 13:59:31
+Gustavo Preston Company specializes in designing, selling, and se =
+rvicing commercial pump solutions, including water boosters, wast ewater =
+pumps, and circulator pumps. They offer a range of product s ...
+French Engineering  akira=09
+Country: FR  =E2=80=A2  Sector: Manufacturing  =E2=80=A2  Discovered: =
+2026-03-24 13:59:35
+French Engineering offers a range of services in Traffic Engineer ing, =
+Water Resources Engineering, and Sustainable Planning and De sign =
+Consulting in Pennsylvania, West Virginia, and Maryland. ...
+Mooers Immigration  akira=09
+Country: US  =E2=80=A2  Sector: Business Services  =E2=80=A2  =
+Discovered: 2026-03-24 15:35:26
+Mooers Immigration is dedicated to the practice of immigration an d =
+nationality law, offering services such as employment-based and =
+family-based immigration, naturalization, and strategic complian ce ...
+Concord Components, Wefapress, Environment Masters, FairmontHot Springs =
+Resort,Road Americ...  akira=09
+Sector: Manufacturing  =E2=80=A2  Discovered: 2026-03-24 15:35:32
+We obtained about 17gb of data of the following companies: JConcord =
+Components, Inc. was founded in 1995 in Concord, Nebrask a as a retail =
+catalog company, supplying hard-to-find electronic ...
+CRYPTO24 =E2=80=94 1 victim(s)
+Estudio O'Farrell  crypto24	estudio-ofarrell.com =E2=86=92 =
+<https://estudio-ofarrell.com/>
+Country: AR  =E2=80=A2  Sector: Not Found  =E2=80=A2  Discovered: =
+2026-03-24 08:48:37
+[AI generated] Estudio O'Farrell is a prestigious law firm based in =
+Buenos Aires, Argentina. Known for its comprehensive legal services, the =
+firm specializes in areas such as corporate law, tax law, ...
+DRAGONFORCE =E2=80=94 1 victim(s)
+M3 Group  dragonforce	m3group.biz =E2=86=92 <https://m3group.biz/>
+Country: LU  =E2=80=A2  Sector: Not Found  =E2=80=A2  Discovered: =
+2026-03-24 14:07:26
+Founded in Lansing more than 11 years ago by Dowling, M3 Group prides =
+itself on being the only local agency that offers the most comprehensive =
+array of integrated branding, marketing and advertising ...
+INCRANSOM =E2=80=94 2 victim(s)
+cerboniservices.com  incransom	cerboniservices.com =E2=86=92 =
+<https://cerboniservices.com/>
+Country: US  =E2=80=A2  Sector: Not Found  =E2=80=A2  Discovered: =
+2026-03-24 19:53:52
+Cerboni specializes in providing expert bookkeeping, tax, and CFO =
+services tailored for the restaurant and hospitality industries, while =
+also serving a diverse range of sectors including retail, ...
+jenningsk12.org  incransom	jenningsk12.org =E2=86=92 =
+<https://jenningsk12.org/>
+Country: US  =E2=80=A2  Sector: Education  =E2=80=A2  Discovered: =
+2026-03-24 19:52:44
+The Jennings School District strives to provide students with learning =
+experiences and opportunities that prepare the company's students for =
+college and careers and for the 21st century. The company ...
+PLAY =E2=80=94 7 victim(s)
+All Real Estate Title Solutions  play	www.aretsifl.com =E2=86=92 =
+<https://www.aretsifl.com/>
+Country: US  =E2=80=A2  Sector: Business Services  =E2=80=A2  =
+Discovered: 2026-03-24 19:27:24
+United States
+Roxiticus Golf Club  play	www.roxiticus.com =E2=86=92 =
+<https://www.roxiticus.com/>
+Country: US  =E2=80=A2  Sector: Hospitality and Tourism  =E2=80=A2  =
+Discovered: 2026-03-24 19:26:47
+United States
+Ascent Asset Group  play	www.ascentasset.com =E2=86=92 =
+<https://www.ascentasset.com/>
+Country: US  =E2=80=A2  Sector: Financial Services  =E2=80=A2  =
+Discovered: 2026-03-24 19:25:47
+United States
+Capital Wholesale Drug  play	www.capital-drug.com =E2=86=92 =
+<https://www.capital-drug.com/>
+Country: US  =E2=80=A2  Sector: Healthcare  =E2=80=A2  Discovered: =
+2026-03-24 19:25:02
+United States
+Block Engineering  play	www.blockeng.com =E2=86=92 =
+<https://www.blockeng.com/>
+Country: US  =E2=80=A2  Sector: Technology  =E2=80=A2  Discovered: =
+2026-03-24 19:24:15
+United States
+Window & Door Design Center of Florida  play	www.wddcfl.com =E2=86=92 =
+<https://www.wddcfl.com/>
+Country: US  =E2=80=A2  Sector: Construction  =E2=80=A2  Discovered: =
+2026-03-24 19:23:35
+United States
+Pinnacle  play	www.pinnacle.tax =E2=86=92 <https://www.pinnacle.tax/>
+Sector: Not Found  =E2=80=A2  Discovered: 2026-03-24 19:26:08
+United States
+QILIN =E2=80=94 2 victim(s)
+Aroostook Mental Health Services  qilin	www.amhc.org =E2=86=92 =
+<https://www.amhc.org/>
+Country: US  =E2=80=A2  Sector: Healthcare  =E2=80=A2  Discovered: =
+2026-03-24 19:29:22
+Retail Centenario  qilin	Retail Centenario =E2=86=92 =
+<https://Retail Centenario>
+Sector: Consumer Services  =E2=80=A2  Discovered: 2026-03-24 19:28:37
+SHINYHUNTERS =E2=80=94 1 victim(s)
+Berkadia Commercial Mortgage, LLC. (berkadia.com)  shinyhunters	=
+berkadia.com =E2=86=92 <https://berkadia.com/>
+Country: US  =E2=80=A2  Sector: Financial Services  =E2=80=A2  =
+Discovered: 2026-03-24 20:35:32
+Salesforce records containing PII and other internal corporate data have =
+been compromised. The company failed to reach an agreement with us =
+despite all the chances and offers we made. They don't ...
+Generated by Adrian St=C3=B6tzler =E2=80=A2 March 24, 2026 =E2=80=A2 =
+Sources: NVD, CISA KEV, ransomware.live=
+
+--Apple-Mail=_C0CBAFC1-C278-4D37-BDC6-85B127E0D4D8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html aria-label=3D"message body"><head><meta http-equiv=3D"content-type" =
+content=3D"text/html; charset=3Dutf-8"></head><body =
+style=3D"overflow-wrap: break-word; -webkit-nbsp-mode: space; =
+line-break: after-white-space;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"font-variant-caps: normal; color: rgb(0, 0, =
+0); font-family: Arial, Helvetica, sans-serif; background: rgb(232, 234, =
+237);"><tbody><tr><td align=3D"center" style=3D"padding: 32px =
+16px;"><table width=3D"900" cellpadding=3D"0" cellspacing=3D"0" =
+style=3D"max-width: 900px; width: 900px; background: rgb(255, 255, =
+255);"><tbody><tr><td style=3D"background: rgb(26, 35, 126); padding: =
+36px 40px; text-align: center;"><div style=3D"font-size: 32px; =
+font-weight: bold; color: rgb(255, 255, 255); letter-spacing: 3px;">CISO =
+TEAM</div><div style=3D"font-size: 16px; color: rgb(159, 168, 218); =
+margin-top: 6px;">Daily Cybersecurity Briefing</div><div =
+style=3D"font-size: 20px; color: rgb(255, 255, 255); margin-top: 10px; =
+font-weight: bold;">March 24, 2026</div></td></tr><tr><td =
+style=3D"padding: 40px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"margin-bottom: 36px;"><tbody><tr><td =
+width=3D"32%" style=3D"background: rgb(232, 234, 246); padding: 20px =
+16px; text-align: center;"><div style=3D"font-size: 36px; font-weight: =
+bold; color: rgb(26, 35, 126);">31</div><div style=3D"font-size: 14px; =
+color: rgb(85, 85, 85); margin-top: 4px;">New CVEs</div><div =
+style=3D"font-size: 12px; color: rgb(136, 136, 136); margin-top: 2px;">5 =
+Critical =E2=80=A2 26 High</div></td><td width=3D"2%"></td><td =
+width=3D"32%" style=3D"background: rgb(255, 243, 224); padding: 20px =
+16px; text-align: center;"><div style=3D"font-size: 36px; font-weight: =
+bold; color: rgb(230, 81, 0);">0</div><div style=3D"font-size: 14px; =
+color: rgb(85, 85, 85); margin-top: 4px;">CISA KEV Additions</div><div =
+style=3D"font-size: 12px; color: rgb(136, 136, 136); margin-top: =
+2px;">Actively Exploited</div></td><td width=3D"2%"></td><td width=3D"32%"=
+ style=3D"background: rgb(252, 228, 236); padding: 20px 16px; =
+text-align: center;"><div style=3D"font-size: 36px; font-weight: bold; =
+color: rgb(183, 28, 28);">19</div><div style=3D"font-size: 14px; color: =
+rgb(85, 85, 85); margin-top: 4px;">Ransomware Victims</div><div =
+style=3D"font-size: 12px; color: rgb(136, 136, 136); margin-top: 2px;">7 =
+Active Group(s)</div></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom: =
+40px;"><tbody><tr><td style=3D"padding-bottom: 10px; =
+border-bottom-width: 3px; border-bottom-style: solid; =
+border-bottom-color: rgb(26, 35, 126);"><h2 style=3D"margin: 0px; color: =
+rgb(26, 35, 126); font-size: 22px;">New Vulnerabilities (NVD)</h2><div =
+style=3D"font-size: 13px; color: rgb(136, 136, 136); margin-top: =
+4px;">Sorted by CVSS score &nbsp;=E2=80=A2&nbsp; 5 Critical, 26 High =
+&nbsp;=E2=80=A2&nbsp; Highest: 9.8</div></td></tr><tr><td =
+style=3D"padding-top: 16px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(211, 47, 47); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-33195 =
+&nbsp;&nbsp;<span style=3D"background: rgb(211, 47, 47); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">CRITICAL</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>9.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Active Storage allows users to attach cloud and local files in =
+Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, =
+Active Storage's `DiskService#path_for` does not validate that the =
+resolved filesystem path remains within the storage root directory. If a =
+blob key containing path ...</td></tr><tr><td style=3D"padding-top: 8px; =
+font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33195" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33195</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(211, 47, 47); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-4001 &nbsp;&nbsp;<span style=3D"background: rgb(211, 47, =
+47); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: 4px; =
+font-size: 13px; display: =
+inline-block;">CRITICAL</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>9.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">The =
+Woocommerce Custom Product Addons Pro plugin for WordPress is vulnerable =
+to Remote Code Execution in all versions up to, and including, 5.4.1 via =
+the custom pricing formula eval() in the process_custom_formula() =
+function within includes/process/price.php. This is due to insufficient =
+...</td></tr><tr><td style=3D"padding-top: 8px; font-size: 13px; color: =
+rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4001" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4001</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a href=3D"https://acowebs.com/woo-custom-product-addons/" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://acowebs.com/woo-custom-product-addons/</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://www.wordfence.com/threat-intel/vulnerabilities/id/70a2b6ff=
+-defc-4722-9af9-3cae94e98632?source=3Dcve" style=3D"color: rgb(21, 101, =
+192); text-decoration: =
+none;">https://www.wordfence.com/threat-intel/vulnerabilities/id/70a2b6ff-=
+def...</a></td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(245, 245, 245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(211, 47, 47); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33211 &nbsp;&nbsp;<span style=3D"background: rgb(211, 47, =
+47); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: 4px; =
+font-size: 13px; display: =
+inline-block;">CRITICAL</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>9.6</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Tekton Pipelines project provides k8s-style resources for =
+declaring CI/CD-style pipelines. Starting in version 1.0.0 and prior to =
+versions 1.0.1, 1.3.3, 1.6.1, 1.9.2, and 1.10.2, the Tekton Pipelines =
+git resolver is vulnerable to path traversal via the `pathInRepo` =
+parameter. A tenant with ...</td></tr><tr><td style=3D"padding-top: 8px; =
+font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33211" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33211</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(211, 47, 47); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33202 &nbsp;&nbsp;<span style=3D"background: rgb(211, 47, =
+47); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: 4px; =
+font-size: 13px; display: =
+inline-block;">CRITICAL</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>9.1</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Active Storage allows users to attach cloud and local files in =
+Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, =
+Active Storage's `DiskService#delete_prefixed` passes blob keys directly =
+to `Dir.glob` without escaping glob metacharacters. If a blob key =
+contains attacker-controlled ...</td></tr><tr><td style=3D"padding-top: =
+8px; font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33202" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33202</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(211, 47, 47); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33286 &nbsp;&nbsp;<span style=3D"background: rgb(211, 47, =
+47); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: 4px; =
+font-size: 13px; display: =
+inline-block;">CRITICAL</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>9.1</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Graphiti is a framework that sits on top of models and exposes =
+them via a JSON:API-compliant interface. Versions prior to 1.10.2 have =
+an arbitrary method execution vulnerability that affects Graphiti's =
+JSONAPI write functionality. An attacker can craft a malicious JSONAPI =
+payload with arbitrary ...</td></tr><tr><td style=3D"padding-top: 8px; =
+font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33286" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33286</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-3533 &nbsp;&nbsp;<span style=3D"background: rgb(245, 124, =
+0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: 4px; =
+font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">The =
+Jupiter X Core plugin for WordPress is vulnerable to limited file =
+uploads due to missing authorization on import_popup_templates() =
+function as well as insufficient file type validation in the =
+upload_files() function in all versions up to, and including, 4.14.1. =
+This makes it possible for ...</td></tr><tr><td style=3D"padding-top: =
+8px; font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-3533" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-3533</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/inc=
+ludes/control-panel-2/includes/class-popup.php?rev=3D3430169#138" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/incl=
+ude...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/inc=
+ludes/extensions/raven/includes/modules/forms/classes/ajax-handler.php?rev=
+=3D3430169#L434" style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://plugins.trac.wordpress.org/browser/jupiterx-core/trunk/incl=
+ude...</a></td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(245, 245, 245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-4673 &nbsp;&nbsp;<span style=3D"background: rgb(245, 124, =
+0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: 4px; =
+font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Heap buffer overflow in WebAudio in Google Chrome prior to =
+146.0.7680.165 allowed a remote attacker to perform an out of bounds =
+memory write via a crafted HTML page. (Chromium security severity: =
+High)</td></tr><tr><td style=3D"padding-top: 8px; font-size: 13px; =
+color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4673" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4673</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://chromereleases.googleblog.com/2026/03/stable-channel-updat=
+e-for-desktop_23.html" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://chromereleases.googleblog.com/2026/03/stable-channel-update=
+-fo...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://issues.chromium.org/issues/485397284" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://issues.chromium.org/issues/485397284</a></td></tr></tbody><=
+/table></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4674 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">Out =
+of bounds read in CSS in Google Chrome prior to 146.0.7680.165 allowed a =
+remote attacker to perform out of bounds memory access via a crafted =
+HTML page. (Chromium security severity: High)</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4674" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4674</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://chromereleases.googleblog.com/2026/03/stable-channel-updat=
+e-for-desktop_23.html" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://chromereleases.googleblog.com/2026/03/stable-channel-update=
+-fo...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://issues.chromium.org/issues/488188166" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://issues.chromium.org/issues/488188166</a></td></tr></tbody><=
+/table></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4675 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Heap buffer overflow in WebGL in Google Chrome prior to =
+146.0.7680.165 allowed a remote attacker to perform an out of bounds =
+memory read via a crafted HTML page. (Chromium security severity: =
+High)</td></tr><tr><td style=3D"padding-top: 8px; font-size: 13px; =
+color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4675" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4675</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://chromereleases.googleblog.com/2026/03/stable-channel-updat=
+e-for-desktop_23.html" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://chromereleases.googleblog.com/2026/03/stable-channel-update=
+-fo...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://issues.chromium.org/issues/488270257" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://issues.chromium.org/issues/488270257</a></td></tr></tbody><=
+/table></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4676 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">Use =
+after free in Dawn in Google Chrome prior to 146.0.7680.165 allowed a =
+remote attacker to potentially perform a sandbox escape via a crafted =
+HTML page. (Chromium security severity: High)</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4676" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4676</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://chromereleases.googleblog.com/2026/03/stable-channel-updat=
+e-for-desktop_23.html" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://chromereleases.googleblog.com/2026/03/stable-channel-update=
+-fo...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://issues.chromium.org/issues/488613135" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://issues.chromium.org/issues/488613135</a></td></tr></tbody><=
+/table></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4677 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Inappropriate implementation in WebAudio in Google Chrome prior to =
+146.0.7680.165 allowed a remote attacker to perform an out of bounds =
+memory read via a crafted HTML page. (Chromium security severity: =
+High)</td></tr><tr><td style=3D"padding-top: 8px; font-size: 13px; =
+color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4677" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4677</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://chromereleases.googleblog.com/2026/03/stable-channel-updat=
+e-for-desktop_23.html" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://chromereleases.googleblog.com/2026/03/stable-channel-update=
+-fo...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://issues.chromium.org/issues/490533968" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://issues.chromium.org/issues/490533968</a></td></tr></tbody><=
+/table></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4678 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">Use =
+after free in WebGPU in Google Chrome prior to 146.0.7680.165 allowed a =
+remote attacker to execute arbitrary code inside a sandbox via a crafted =
+HTML page. (Chromium security severity: High)</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4678" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4678</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://chromereleases.googleblog.com/2026/03/stable-channel-updat=
+e-for-desktop_23.html" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://chromereleases.googleblog.com/2026/03/stable-channel-update=
+-fo...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://issues.chromium.org/issues/491164019" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://issues.chromium.org/issues/491164019</a></td></tr></tbody><=
+/table></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4679 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Integer overflow in Fonts in Google Chrome prior to 146.0.7680.165 =
+allowed a remote attacker to perform an out of bounds memory write via a =
+crafted HTML page. (Chromium security severity: High)</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4679" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4679</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://chromereleases.googleblog.com/2026/03/stable-channel-updat=
+e-for-desktop_23.html" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://chromereleases.googleblog.com/2026/03/stable-channel-update=
+-fo...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://issues.chromium.org/issues/491516670" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://issues.chromium.org/issues/491516670</a></td></tr></tbody><=
+/table></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4680 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">Use =
+after free in FedCM in Google Chrome prior to 146.0.7680.165 allowed a =
+remote attacker to execute arbitrary code inside a sandbox via a crafted =
+HTML page. (Chromium security severity: High)</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4680" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4680</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://chromereleases.googleblog.com/2026/03/stable-channel-updat=
+e-for-desktop_23.html" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://chromereleases.googleblog.com/2026/03/stable-channel-update=
+-fo...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://issues.chromium.org/issues/491869946" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://issues.chromium.org/issues/491869946</a></td></tr></tbody><=
+/table></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-22739 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.6</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Vulnerability in Spring Cloud when substituting the profile =
+parameter from a request made to the Spring Cloud Config Server =
+configured to the native file system as a backend, because it was =
+possible to access files outside of the configured search =
+directories.This issue affects Spring Cloud: from ...</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-22739" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-22739</a>&nbsp;&nbsp;|&nb=
+sp;&nbsp;<a href=3D"https://spring.io/security/cve-2026-22739" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://spring.io/security/cve-2026-22739</a></td></tr></tbody></ta=
+ble></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4021 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>8.1</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">The =
+Contest Gallery plugin for WordPress is vulnerable to an authentication =
+bypass leading to admin account takeover in all versions up to, and =
+including, 28.1.5. This is due to the email confirmation handler in =
+`users-registry-check-after-email-or-pin-confirmation.php` using the =
+user's email ...</td></tr><tr><td style=3D"padding-top: 8px; font-size: =
+13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4021" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4021</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a =
+href=3D"https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28=
+.1.4/ajax/ajax-functions-frontend.php#L204" style=3D"color: rgb(21, 101, =
+192); text-decoration: =
+none;">https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28.=
+1.4...</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28=
+.1.4/v10/v10-admin/users/frontend/registry/users-registry-check-after-emai=
+l-or-pin-confirmation.php#L153" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://plugins.trac.wordpress.org/browser/contest-gallery/tags/28.=
+1.4...</a></td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(245, 245, 245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33298 &nbsp;&nbsp;<span style=3D"background: rgb(245, =
+124, 0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: =
+4px; font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.8</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">llama.cpp is an inference of several LLM models in C/C++. Prior to =
+b7824, an integer overflow vulnerability in the `ggml_nbytes` function =
+allows an attacker to bypass memory validation by crafting a GGUF file =
+with specific tensor dimensions. This causes `ggml_nbytes` to return a =
+significantly ...</td></tr><tr><td style=3D"padding-top: 8px; font-size: =
+13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33298" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33298</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33174 &nbsp;&nbsp;<span style=3D"background: rgb(245, =
+124, 0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: =
+4px; font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.5</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Active Storage allows users to attach cloud and local files in =
+Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, =
+when serving files through Active Storage's proxy delivery mode, the =
+proxy controller loads the entire requested byte range into memory =
+before sending it. A request ...</td></tr><tr><td style=3D"padding-top: =
+8px; font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33174" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33174</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33176 &nbsp;&nbsp;<span style=3D"background: rgb(245, =
+124, 0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: =
+4px; font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.5</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Active Support is a toolkit of support libraries and Ruby core =
+extensions extracted from the Rails framework. Prior to versions =
+8.1.2.1, 8.0.4.1, and 7.2.3.1, Active Support number helpers accept =
+strings containing scientific notation (e.g. `1e10000`), which =
+`BigDecimal` expands into extremely ...</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33176" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33176</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33241 &nbsp;&nbsp;<span style=3D"background: rgb(245, =
+124, 0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: =
+4px; font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.5</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Salvo is a Rust web framework. Prior to version 0.89.3, Salvo's =
+form data parsing implementations (`form_data()` method and =
+`Extractible` macro) do not enforce payload size limits before reading =
+request bodies into memory. This allows attackers to cause Out-of-Memory =
+(OOM) conditions by sending ...</td></tr><tr><td style=3D"padding-top: =
+8px; font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33241" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33241</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33242 &nbsp;&nbsp;<span style=3D"background: rgb(245, =
+124, 0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: =
+4px; font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.5</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Salvo is a Rust web framework. Versions 0.39.0 through 0.89.2 have =
+a Path Traversal and Access Control Bypass vulnerability in the =
+salvo-proxy component. The vulnerability allows an unauthenticated =
+external attacker to bypass proxy routing constraints and access =
+unintended backend paths (e.g., ...</td></tr><tr><td style=3D"padding-top:=
+ 8px; font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33242" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33242</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33250 &nbsp;&nbsp;<span style=3D"background: rgb(245, =
+124, 0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: =
+4px; font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.5</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Freeciv21 is a free open source, turn-based, empire-building =
+strategy game. Versions prior to 3.1.1 crash with a stack overflow when =
+receiving specially-crafted packets. A remote attacker can use this to =
+take down any public server. A malicious server can use this to crash =
+the game on the player's ...</td></tr><tr><td style=3D"padding-top: 8px; =
+font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33250" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33250</a>&nbsp;&nbsp;|&nb=
+sp;&nbsp;<a href=3D"https://redmine.freeciv.org/issues/1955" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://redmine.freeciv.org/issues/1955</a></td></tr></tbody></tabl=
+e></td></tr></tbody></table><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"background: rgb(245, 245, 245); =
+border-left-width: 5px; border-left-style: solid; border-left-color: =
+rgb(26, 35, 126); margin-bottom: 14px;"><tbody><tr><td style=3D"padding: =
+16px 20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-33282 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.5</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Ella Core is a 5G core designed for private networks. Versions =
+prior to 1.6.0 panic when processing a malformed NGAP LocationReport =
+message with `ue-presence-in-area-of-interest` event type and omitting =
+the optional `UEPresenceInAreaOfInterestList` IE. An attacker able to =
+send crafted NGAP ...</td></tr><tr><td style=3D"padding-top: 8px; =
+font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33282" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33282</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-33307 &nbsp;&nbsp;<span style=3D"background: rgb(245, =
+124, 0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: =
+4px; font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.5</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: =
+1.5;">Mod_gnutls is a TLS module for Apache HTTPD based on GnuTLS. In =
+versions prior to 0.12.3 and 0.13.0, code for client certificate =
+verification imported the certificate chain sent by the client into a =
+fixed size `gnutls_x509_crt_t x509[]` array without checking the number =
+of certificates is less than ...</td></tr><tr><td style=3D"padding-top: =
+8px; font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33307" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33307</a></td></tr></tbod=
+y></table></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(245, 245, =
+245); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(26, 35, 126); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(26, 35, 126); padding-bottom: =
+8px;">CVE-2026-4613 &nbsp;&nbsp;<span style=3D"background: rgb(245, 124, =
+0); color: rgb(255, 255, 255); padding: 4px 12px; border-radius: 4px; =
+font-size: 13px; display: =
+inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span style=3D"font-size: =
+14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.3</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">A =
+vulnerability was found in SourceCodester E-Commerce Site 1.0. This =
+vulnerability affects unknown code of the file /products.php. The =
+manipulation of the argument Search results in sql injection. The attack =
+can be executed remotely. The exploit has been made public and could be =
+used.</td></tr><tr><td style=3D"padding-top: 8px; font-size: 13px; =
+color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4613" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4613</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a href=3D"https://vuldb.com/?ctiid.352477" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://vuldb.com/?ctiid.352477</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://vuldb.com/?id.352477" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://vuldb.com/?id.352477</a></td></tr></tbody></table></td></tr=
+></tbody></table><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"background: rgb(245, 245, 245); border-left-width: 5px; =
+border-left-style: solid; border-left-color: rgb(26, 35, 126); =
+margin-bottom: 14px;"><tbody><tr><td style=3D"padding: 16px =
+20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4615 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.3</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">A =
+vulnerability was identified in SourceCodester Online Catering =
+Reservation 1.0. Impacted is an unknown function of the file =
+/search.php. Such manipulation of the argument rcode leads to sql =
+injection. The attack may be performed from remote. The exploit is =
+publicly available and might be used.</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4615" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4615</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a href=3D"https://vuldb.com/?ctiid.352479" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://vuldb.com/?ctiid.352479</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://vuldb.com/?id.352479" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://vuldb.com/?id.352479</a></td></tr></tbody></table></td></tr=
+></tbody></table><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"background: rgb(245, 245, 245); border-left-width: 5px; =
+border-left-style: solid; border-left-color: rgb(26, 35, 126); =
+margin-bottom: 14px;"><tbody><tr><td style=3D"padding: 16px =
+20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4617 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.3</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">A =
+weakness has been identified in SourceCodester Patients Waiting Area =
+Queue Management System 1.0. The impacted element is the function =
+ValidateToken of the file /php/api_patient_checkin.php of the component =
+Patient Check-In Module. Executing a manipulation can lead to improper =
+authorization. It ...</td></tr><tr><td style=3D"padding-top: 8px; =
+font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4617" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4617</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a href=3D"https://vuldb.com/?ctiid.352481" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://vuldb.com/?ctiid.352481</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://vuldb.com/?id.352481" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://vuldb.com/?id.352481</a></td></tr></tbody></table></td></tr=
+></tbody></table><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"background: rgb(245, 245, 245); border-left-width: 5px; =
+border-left-style: solid; border-left-color: rgb(26, 35, 126); =
+margin-bottom: 14px;"><tbody><tr><td style=3D"padding: 16px =
+20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4623 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.3</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">A =
+security vulnerability has been detected in DefaultFuction =
+Jeson-Customer-Relationship-Management-System up to =
+1b4679c4d06b90d31dd521c2b000bfdec5a36e00. This affects an unknown =
+function of the file /api/System.php of the component API Module. The =
+manipulation of the argument url leads to ...</td></tr><tr><td =
+style=3D"padding-top: 8px; font-size: 13px; color: rgb(102, 102, =
+102);"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4623" =
+style=3D"color: rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4623</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a href=3D"https://vuldb.com/?ctiid.352482" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://vuldb.com/?ctiid.352482</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://vuldb.com/?id.352482" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://vuldb.com/?id.352482</a></td></tr></tbody></table></td></tr=
+></tbody></table><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"background: rgb(245, 245, 245); border-left-width: 5px; =
+border-left-style: solid; border-left-color: rgb(26, 35, 126); =
+margin-bottom: 14px;"><tbody><tr><td style=3D"padding: 16px =
+20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4624 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.3</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">A =
+vulnerability was detected in SourceCodester Online Library Management =
+System 1.0. The impacted element is an unknown function of the file =
+/home.php of the component Parameter Handler. Performing a manipulation =
+of the argument searchField results in sql injection. The attack can be =
+initiated ...</td></tr><tr><td style=3D"padding-top: 8px; font-size: =
+13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4624" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4624</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a href=3D"https://vuldb.com/?ctiid.352492" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://vuldb.com/?ctiid.352492</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://vuldb.com/?id.352492" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://vuldb.com/?id.352492</a></td></tr></tbody></table></td></tr=
+></tbody></table><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"background: rgb(245, 245, 245); border-left-width: 5px; =
+border-left-style: solid; border-left-color: rgb(26, 35, 126); =
+margin-bottom: 14px;"><tbody><tr><td style=3D"padding: 16px =
+20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-4625 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.3</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">A =
+flaw has been found in SourceCodester Online Admission System 1.0. This =
+affects an unknown function of the file /programmes.php. Executing a =
+manipulation of the argument program can lead to sql injection. The =
+attack can be launched remotely. The exploit has been published and may =
+be used.</td></tr><tr><td style=3D"padding-top: 8px; font-size: 13px; =
+color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-4625" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-4625</a>&nbsp;&nbsp;|&nbs=
+p;&nbsp;<a href=3D"https://vuldb.com/?ctiid.352493" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://vuldb.com/?ctiid.352493</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a =
+href=3D"https://vuldb.com/?id.352493" style=3D"color: rgb(21, 101, 192); =
+text-decoration: =
+none;">https://vuldb.com/?id.352493</a></td></tr></tbody></table></td></tr=
+></tbody></table><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"background: rgb(245, 245, 245); border-left-width: 5px; =
+border-left-style: solid; border-left-color: rgb(26, 35, 126); =
+margin-bottom: 14px;"><tbody><tr><td style=3D"padding: 16px =
+20px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0"><tbody><tr><td style=3D"font-size: 16px; font-weight: =
+bold; color: rgb(26, 35, 126); padding-bottom: 8px;">CVE-2026-33252 =
+&nbsp;&nbsp;<span style=3D"background: rgb(245, 124, 0); color: rgb(255, =
+255, 255); padding: 4px 12px; border-radius: 4px; font-size: 13px; =
+display: inline-block;">HIGH</span>&nbsp;&nbsp;&nbsp;<span =
+style=3D"font-size: 14px; color: rgb(85, 85, =
+85);">CVSS:&nbsp;<strong>7.1</strong></span></td></tr><tr><td =
+style=3D"font-size: 15px; color: rgb(51, 51, 51); line-height: 1.5;">The =
+Go MCP SDK used Go's standard encoding/json. Prior to version 1.4.1, the =
+Go SDK's Streamable HTTP transport accepted browser-generated cross-site =
+`POST` requests without validating the `Origin` header and without =
+requiring `Content-Type: application/json`. In deployments without =
+Authorization, ...</td></tr><tr><td style=3D"padding-top: 8px; =
+font-size: 13px; color: rgb(102, 102, 102);"><a =
+href=3D"https://nvd.nist.gov/vuln/detail/CVE-2026-33252" style=3D"color: =
+rgb(21, 101, 192); text-decoration: =
+none;">https://nvd.nist.gov/vuln/detail/CVE-2026-33252</a></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom:=
+ 40px;"><tbody><tr><td style=3D"padding-bottom: 10px; =
+border-bottom-width: 3px; border-bottom-style: solid; =
+border-bottom-color: rgb(26, 35, 126);"><h2 style=3D"margin: 0px; color: =
+rgb(26, 35, 126); font-size: 22px;">CISA Known Exploited =
+Vulnerabilities</h2></td></tr><tr><td style=3D"padding-top: 16px;"><p =
+style=3D"color: rgb(136, 136, 136); font-size: 15px;">No new CISA KEV =
+entries for this date.</p></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom: =
+40px;"><tbody><tr><td style=3D"padding-bottom: 10px; =
+border-bottom-width: 3px; border-bottom-style: solid; =
+border-bottom-color: rgb(26, 35, 126);"><h2 style=3D"margin: 0px; color: =
+rgb(26, 35, 126); font-size: 22px;">Ransomware Victims =E2=80=94 19 =
+victim(s) reported</h2><div style=3D"font-size: 13px; color: rgb(136, =
+136, 136); margin-top: 4px;">7 active group(s) &nbsp;=E2=80=A2&nbsp; Top =
+targets: US (12), FR (1), AR (1), LU (1)</div></td></tr><tr><td =
+style=3D"padding-top: 16px;"><table width=3D"100%" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"margin-bottom: 10px; margin-top: =
+20px;"><tbody><tr><td style=3D"padding: 8px 14px; background: rgb(183, =
+28, 28);"><span style=3D"color: rgb(255, 255, 255); font-size: 15px; =
+font-weight: bold; letter-spacing: 1px;">AKIRA&nbsp;</span><span =
+style=3D"color: rgb(255, 205, 210); font-size: 13px; margin-left: =
+8px;">=E2=80=94 5 victim(s)</span></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">The Russell's Law =
+Firm&nbsp;&nbsp;<span style=3D"font-size: 13px; background: rgb(183, 28, =
+28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">akira</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Sector:&nbsp;<strong>Business =
+Services</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; Discovered: 2026-03-24 =
+12:58:16</td></tr><tr><td colspan=3D"2" style=3D"font-size: 14px; color: =
+rgb(85, 85, 85); padding-top: 6px; line-height: 1.4;">The Russell's Law =
+Firm specializes in personal injury, wrongful d eath, criminal defense, =
+and DUI cases, offering expert legal repr esentation for their clients. =
+They aim to support individuals =
+...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Gustavo =
+Preston&nbsp;&nbsp;<span style=3D"font-size: 13px; background: rgb(183, =
+28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">akira</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Not Found</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 13:59:31</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">Gustavo Preston Company specializes in designing, =
+selling, and se rvicing commercial pump solutions, including water =
+boosters, wast ewater pumps, and circulator pumps. They offer a range of =
+product s ...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">French =
+Engineering&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">akira</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>FR</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Manufacturing</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 13:59:35</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">French Engineering offers a range of services in =
+Traffic Engineer ing, Water Resources Engineering, and Sustainable =
+Planning and De sign Consulting in Pennsylvania, West Virginia, and =
+Maryland. ...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Mooers =
+Immigration&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">akira</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Business Services</strong>&nbsp;&nbsp;=E2=80=A2&nbsp;=
+ Discovered: 2026-03-24 15:35:26</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">Mooers Immigration is dedicated to the practice of =
+immigration an d nationality law, offering services such as =
+employment-based and family-based immigration, naturalization, and =
+strategic complian ce =
+...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Concord Components, =
+Wefapress, Environment Masters, FairmontHot Springs Resort,Road =
+Americ...&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">akira</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Sector:&nbsp;<strong>Manufacturing</strong>&nbsp;&nbsp;=E2=80=A2&nbs=
+p; Discovered: 2026-03-24 15:35:32</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">We obtained about 17gb of data of the following =
+companies: JConcord Components, Inc. was founded in 1995 in Concord, =
+Nebrask a as a retail catalog company, supplying hard-to-find electronic =
+...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom:=
+ 10px; margin-top: 20px;"><tbody><tr><td style=3D"padding: 8px 14px; =
+background: rgb(183, 28, 28);"><span style=3D"color: rgb(255, 255, 255); =
+font-size: 15px; font-weight: bold; letter-spacing: =
+1px;">CRYPTO24&nbsp;</span><span style=3D"color: rgb(255, 205, 210); =
+font-size: 13px; margin-left: 8px;">=E2=80=94 1 =
+victim(s)</span></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(252, 228, =
+236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Estudio =
+O'Farrell&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">crypto24</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://estudio-ofarrell.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">estudio-ofarrell.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>AR</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Not Found</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 08:48:37</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">[AI generated] Estudio O'Farrell is a prestigious law =
+firm based in Buenos Aires, Argentina. Known for its comprehensive legal =
+services, the firm specializes in areas such as corporate law, tax law, =
+...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom:=
+ 10px; margin-top: 20px;"><tbody><tr><td style=3D"padding: 8px 14px; =
+background: rgb(183, 28, 28);"><span style=3D"color: rgb(255, 255, 255); =
+font-size: 15px; font-weight: bold; letter-spacing: =
+1px;">DRAGONFORCE&nbsp;</span><span style=3D"color: rgb(255, 205, 210); =
+font-size: 13px; margin-left: 8px;">=E2=80=94 1 =
+victim(s)</span></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(252, 228, =
+236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">M3 =
+Group&nbsp;&nbsp;<span style=3D"font-size: 13px; background: rgb(183, =
+28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">dragonforce</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://m3group.biz/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">m3group.biz =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>LU</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Not Found</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 14:07:26</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">Founded in Lansing more than 11 years ago by Dowling, =
+M3 Group prides itself on being the only local agency that offers the =
+most comprehensive array of integrated branding, marketing and =
+advertising =
+...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom:=
+ 10px; margin-top: 20px;"><tbody><tr><td style=3D"padding: 8px 14px; =
+background: rgb(183, 28, 28);"><span style=3D"color: rgb(255, 255, 255); =
+font-size: 15px; font-weight: bold; letter-spacing: =
+1px;">INCRANSOM&nbsp;</span><span style=3D"color: rgb(255, 205, 210); =
+font-size: 13px; margin-left: 8px;">=E2=80=94 2 =
+victim(s)</span></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(252, 228, =
+236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, =
+28);">cerboniservices.com&nbsp;&nbsp;<span style=3D"font-size: 13px; =
+background: rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px =
+10px; display: inline-block;">incransom</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://cerboniservices.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">cerboniservices.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Not Found</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 19:53:52</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">Cerboni specializes in providing expert bookkeeping, =
+tax, and CFO services tailored for the restaurant and hospitality =
+industries, while also serving a diverse range of sectors including =
+retail, ...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, =
+28);">jenningsk12.org&nbsp;&nbsp;<span style=3D"font-size: 13px; =
+background: rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px =
+10px; display: inline-block;">incransom</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://jenningsk12.org/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">jenningsk12.org =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Education</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 19:52:44</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">The Jennings School District strives to provide =
+students with learning experiences and opportunities that prepare the =
+company's students for college and careers and for the 21st century. The =
+company ...</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom:=
+ 10px; margin-top: 20px;"><tbody><tr><td style=3D"padding: 8px 14px; =
+background: rgb(183, 28, 28);"><span style=3D"color: rgb(255, 255, 255); =
+font-size: 15px; font-weight: bold; letter-spacing: =
+1px;">PLAY&nbsp;</span><span style=3D"color: rgb(255, 205, 210); =
+font-size: 13px; margin-left: 8px;">=E2=80=94 7 =
+victim(s)</span></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(252, 228, =
+236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">All Real Estate Title =
+Solutions&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">play</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://www.aretsifl.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">www.aretsifl.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Business Services</strong>&nbsp;&nbsp;=E2=80=A2&nbsp;=
+ Discovered: 2026-03-24 19:27:24</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">United =
+States</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Roxiticus Golf =
+Club&nbsp;&nbsp;<span style=3D"font-size: 13px; background: rgb(183, 28, =
+28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">play</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://www.roxiticus.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">www.roxiticus.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Hospitality and =
+Tourism</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; Discovered: 2026-03-24 =
+19:26:47</td></tr><tr><td colspan=3D"2" style=3D"font-size: 14px; color: =
+rgb(85, 85, 85); padding-top: 6px; line-height: 1.4;">United =
+States</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Ascent Asset =
+Group&nbsp;&nbsp;<span style=3D"font-size: 13px; background: rgb(183, =
+28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">play</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://www.ascentasset.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">www.ascentasset.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Financial Services</strong>&nbsp;&nbsp;=E2=80=A2&nbsp=
+; Discovered: 2026-03-24 19:25:47</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">United =
+States</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Capital Wholesale =
+Drug&nbsp;&nbsp;<span style=3D"font-size: 13px; background: rgb(183, 28, =
+28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">play</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://www.capital-drug.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">www.capital-drug.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Healthcare</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 19:25:02</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">United =
+States</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Block =
+Engineering&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">play</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://www.blockeng.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">www.blockeng.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Technology</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 19:24:15</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">United =
+States</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Window &amp; Door =
+Design Center of Florida&nbsp;&nbsp;<span style=3D"font-size: 13px; =
+background: rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px =
+10px; display: inline-block;">play</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://www.wddcfl.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">www.wddcfl.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Construction</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 19:23:35</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">United =
+States</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, =
+28);">Pinnacle&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">play</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://www.pinnacle.tax/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">www.pinnacle.tax =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Sector:&nbsp;<strong>Not Found</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 19:26:08</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">United =
+States</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom:=
+ 10px; margin-top: 20px;"><tbody><tr><td style=3D"padding: 8px 14px; =
+background: rgb(183, 28, 28);"><span style=3D"color: rgb(255, 255, 255); =
+font-size: 15px; font-weight: bold; letter-spacing: =
+1px;">QILIN&nbsp;</span><span style=3D"color: rgb(255, 205, 210); =
+font-size: 13px; margin-left: 8px;">=E2=80=94 2 =
+victim(s)</span></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(252, 228, =
+236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Aroostook Mental =
+Health Services&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">qilin</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://www.amhc.org/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">www.amhc.org =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Healthcare</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Discovered: 2026-03-24 =
+19:29:22</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"background: =
+rgb(252, 228, 236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Retail =
+Centenario&nbsp;&nbsp;<span style=3D"font-size: 13px; background: =
+rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px 10px; display: =
+inline-block;">qilin</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://Retail Centenario" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">Retail Centenario =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Sector:&nbsp;<strong>Consumer =
+Services</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; Discovered: 2026-03-24 =
+19:28:37</td></tr></tbody></table></td></tr></tbody></table><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin-bottom:=
+ 10px; margin-top: 20px;"><tbody><tr><td style=3D"padding: 8px 14px; =
+background: rgb(183, 28, 28);"><span style=3D"color: rgb(255, 255, 255); =
+font-size: 15px; font-weight: bold; letter-spacing: =
+1px;">SHINYHUNTERS&nbsp;</span><span style=3D"color: rgb(255, 205, 210); =
+font-size: 13px; margin-left: 8px;">=E2=80=94 1 =
+victim(s)</span></td></tr></tbody></table><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"background: rgb(252, 228, =
+236); border-left-width: 5px; border-left-style: solid; =
+border-left-color: rgb(183, 28, 28); margin-bottom: =
+14px;"><tbody><tr><td style=3D"padding: 16px 20px;"><table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"font-size: =
+16px; font-weight: bold; color: rgb(183, 28, 28);">Berkadia Commercial =
+Mortgage, LLC. (berkadia.com)&nbsp;&nbsp;<span style=3D"font-size: 13px; =
+background: rgb(183, 28, 28); color: rgb(255, 255, 255); padding: 3px =
+10px; display: inline-block;">shinyhunters</span></td><td align=3D"right" =
+style=3D"vertical-align: top;"><a href=3D"https://berkadia.com/" =
+style=3D"color: rgb(183, 28, 28); font-size: 13px; text-decoration: =
+none;">berkadia.com =E2=86=92</a></td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: =
+6px;">Country:&nbsp;<strong>US</strong>&nbsp;&nbsp;=E2=80=A2&nbsp; =
+Sector:&nbsp;<strong>Financial Services</strong>&nbsp;&nbsp;=E2=80=A2&nbsp=
+; Discovered: 2026-03-24 20:35:32</td></tr><tr><td colspan=3D"2" =
+style=3D"font-size: 14px; color: rgb(85, 85, 85); padding-top: 6px; =
+line-height: 1.4;">Salesforce records containing PII and other internal =
+corporate data have been compromised. The company failed to reach an =
+agreement with us despite all the chances and offers we made. They don't =
+...</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr><tr><td style=3D"background: rgb(26, 35, 126); padding: =
+20px 40px; text-align: center;"><div style=3D"font-size: 13px; color: =
+rgb(159, 168, 218);">Generated by Adrian St=C3=B6tzler =E2=80=A2 March =
+24, 2026 =E2=80=A2 Sources: NVD, CISA KEV, =
+ransomware.live</div></td></tr></tbody></table></td></tr></tbody></table><=
+/body></html>=
+
+--Apple-Mail=_C0CBAFC1-C278-4D37-BDC6-85B127E0D4D8--
