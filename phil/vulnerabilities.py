@@ -53,7 +53,7 @@ def fetch_nvd_cves(date: datetime, max_results: int = 50) -> list[dict]:
                     severity = cvss_data.get("baseSeverity", "N/A")
                     break
 
-            if severity.upper() not in ("HIGH", "CRITICAL"):
+            if severity.upper() != "CRITICAL":
                 continue
 
             nvd_url = f"https://nvd.nist.gov/vuln/detail/{cve_id}"

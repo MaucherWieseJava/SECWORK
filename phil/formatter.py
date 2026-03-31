@@ -210,16 +210,15 @@ def build_html_report(
     kev_ids = {v["id"] for v in kev_vulns}
 
     # --- Severity breakdown for stats ---
-    crit_count = sum(1 for v in nvd_cves if v["severity"] == "CRITICAL")
-    high_count = sum(1 for v in nvd_cves if v["severity"] == "HIGH")
+    crit_count = len(nvd_cves)
     highest_score = max((v["cvss_score"] or 0 for v in nvd_cves), default=0)
 
     # --- NVD CVEs section ---
     if nvd_cves:
         cve_cards = "".join(_cve_card(v, is_in_kev=v["id"] in kev_ids) for v in nvd_cves)
-        cve_subtitle = f"Sorted by CVSS score &nbsp;&bull;&nbsp; {crit_count} Critical, {high_count} High &nbsp;&bull;&nbsp; Highest: {highest_score}"
+        cve_subtitle = f"Sorted by CVSS score &nbsp;&bull;&nbsp; {crit_count} Critical &nbsp;&bull;&nbsp; Highest: {highest_score}"
     else:
-        cve_cards = '<p style="color:#888;font-size:15px;">No new high/critical CVEs found for this date.</p>'
+        cve_cards = '<p style="color:#888;font-size:15px;">No new critical CVEs found for this date.</p>'
         cve_subtitle = ""
 
     # --- CISA KEV section ---
@@ -260,7 +259,7 @@ def build_html_report(
             <td width="32%" style="background:#e8eaf6;padding:20px 16px;text-align:center;">
                 <div style="font-size:36px;font-weight:bold;color:#1a237e;">{len(nvd_cves)}</div>
                 <div style="font-size:14px;color:#555;margin-top:4px;">New CVEs</div>
-                <div style="font-size:12px;color:#888;margin-top:2px;">{crit_count} Critical &bull; {high_count} High</div>
+                <div style="font-size:12px;color:#888;margin-top:2px;">{crit_count} Critical</div>
             </td>
             <td width="2%"></td>
             <td width="32%" style="background:#fff3e0;padding:20px 16px;text-align:center;">
