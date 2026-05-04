@@ -73,13 +73,14 @@ CSV_FIELDS = [
 # ---------------------------------------------------------------------------
 
 class SonarQubeClient:
-    def __init__(self, base_url: str, token: str, verify_ssl: bool = True):
+    def __init__(self, base_url: str, token: str, cert_pem: Optional[str] = None, verify_ssl: bool = True):
         self.base_url = base_url.rstrip("/")
-        self.auth     = HTTPBasicAuth(token, "")  # SonarQube: Token als Username, leeres PW
         self.verify   = verify_ssl
         self.session  = requests.Session()
-        self.session.auth   = self.auth
+        self.session.headers["Authorization"] = f"Bearer {token}"
         self.session.verify = self.verify
+        if cert_pem:
+            self.session.cert = cert_pem
 
     def get(self, path: str, params: dict = None) -> dict:
         url = f"{self.base_url}{path}"
@@ -285,8 +286,9 @@ Beispiele:
     # Verbindung
     conn = parser.add_argument_group("Verbindung")
     conn.add_argument("--url",   required=True,  help="SonarQube Base-URL (z.B. https://sonar.example.com)")
-    conn.add_argument("--token", required=True,  help="SonarQube User/Service Account Token")
-    conn.add_argument("--no-ssl-verify", action="store_true", help="SSL-Zertifikatsprüfung deaktivieren")
+    conn.add_argument("--token", default=None,   help="SonarQube Token (optional, Standard aus Code)")
+    conn.add_argument("--cert",  default=None,   help="Pfad zur PEM-Zertifikatsdatei fuer Client-Auth")
+    conn.add_argument("--no-ssl-verify", action="store_true", help="SSL-Zertifikatspruefung deaktivieren")
 
     # Filter
     flt = parser.add_argument_group("Filter")
@@ -328,11 +330,26 @@ def csv_list_raw(value: Optional[str]) -> Optional[list[str]]:
 # Main
 # ---------------------------------------------------------------------------
 
+DEFAULT_TOKEN = "DEIN_TOKEN_HIER"  # <-- Token hier eintragen
+
+
 def main():
     args   = parse_args()
+    token  = args.token or DEFAULT_TOKEN
+
+    # PEM-Zertifikat: wenn nicht per --cert angegeben, suche im gleichen Verzeichnis
+    cert_pem = args.cert
+    if not cert_pem:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        pem_files  = [f for f in os.listdir(script_dir) if f.endswith(".pem")]
+        if pem_files:
+            cert_pem = os.path.join(script_dir, pem_files[0])
+            print(f"PEM-Zertifikat gefunden: {cert_pem}")
+
     client = SonarQubeClient(
         base_url   = args.url,
-        token      = args.token,
+        token      = token,
+        cert_pem   = cert_pem,
         verify_ssl = not args.no_ssl_verify,
     )
 
