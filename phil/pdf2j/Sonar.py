@@ -76,13 +76,11 @@ CSV_FIELDS = [
 # ---------------------------------------------------------------------------
 
 class SonarQubeClient:
-    def __init__(self, base_url: str, token: str, cert_pem: str = None):
+    def __init__(self, base_url: str, token: str, ca_cert: str = None):
         self.base_url = base_url.rstrip("/")
         self.session  = requests.Session()
         self.session.headers["Authorization"] = f"Bearer {token}"
-        self.session.verify = False
-        if cert_pem:
-            self.session.cert = cert_pem
+        self.session.verify = ca_cert if ca_cert else False
 
     def get(self, path: str, params: dict = None) -> dict:
         url = f"{self.base_url}{path}"
@@ -339,7 +337,7 @@ def main():
     client = SonarQubeClient(
         base_url = SONAR_URL,
         token    = args.token,
-        cert_pem = CERT_PEM,
+        ca_cert  = CERT_PEM,
     )
 
     print("\n🔍 SonarQube Findings Exporter")
