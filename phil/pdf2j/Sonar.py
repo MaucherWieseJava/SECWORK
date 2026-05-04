@@ -35,6 +35,9 @@ except ImportError:
 # Konstanten
 # ---------------------------------------------------------------------------
 
+SONAR_URL  = "https://sonarqube.group.echonet"
+CERT_PEM   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "certificate.pem")  # <-- PEM-Dateiname hier anpassen
+
 DEFAULT_PAGE_SIZE = 500  # Max. von SonarQube API erlaubt
 MAX_RESULTS = 10_000     # SonarQube API-Limit (deep pagination nötig danach)
 
@@ -73,12 +76,11 @@ CSV_FIELDS = [
 # ---------------------------------------------------------------------------
 
 class SonarQubeClient:
-    def __init__(self, base_url: str, token: str, cert_pem: Optional[str] = None, verify_ssl: bool = True):
+    def __init__(self, base_url: str, token: str, cert_pem: str = None):
         self.base_url = base_url.rstrip("/")
-        self.verify   = verify_ssl
         self.session  = requests.Session()
         self.session.headers["Authorization"] = f"Bearer {token}"
-        self.session.verify = self.verify
+        self.session.verify = False
         if cert_pem:
             self.session.cert = cert_pem
 
@@ -285,10 +287,7 @@ Beispiele:
 
     # Verbindung
     conn = parser.add_argument_group("Verbindung")
-    conn.add_argument("--url",   required=True,  help="SonarQube Base-URL (z.B. https://sonar.example.com)")
-    conn.add_argument("--token", default=None,   help="SonarQube Token (optional, Standard aus Code)")
-    conn.add_argument("--cert",  default=None,   help="Pfad zur PEM-Zertifikatsdatei fuer Client-Auth")
-    conn.add_argument("--no-ssl-verify", action="store_true", help="SSL-Zertifikatspruefung deaktivieren")
+    conn.add_argument("--token", required=True,  help="SonarQube API Token")
 
     # Filter
     flt = parser.add_argument_group("Filter")
@@ -330,27 +329,17 @@ def csv_list_raw(value: Optional[str]) -> Optional[list[str]]:
 # Main
 # ---------------------------------------------------------------------------
 
-DEFAULT_TOKEN = "DEIN_TOKEN_HIER"  # <-- Token hier eintragen
-
-
 def main():
-    args   = parse_args()
-    token  = args.token or DEFAULT_TOKEN
+    args = parse_args()
 
-    # PEM-Zertifikat: wenn nicht per --cert angegeben, suche im gleichen Verzeichnis
-    cert_pem = args.cert
-    if not cert_pem:
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        pem_files  = [f for f in os.listdir(script_dir) if f.endswith(".pem")]
-        if pem_files:
-            cert_pem = os.path.join(script_dir, pem_files[0])
-            print(f"PEM-Zertifikat gefunden: {cert_pem}")
+    if not os.path.isfile(CERT_PEM):
+        print(f"ERROR: PEM-Zertifikat nicht gefunden: {CERT_PEM}")
+        sys.exit(1)
 
     client = SonarQubeClient(
-        base_url   = args.url,
-        token      = token,
-        cert_pem   = cert_pem,
-        verify_ssl = not args.no_ssl_verify,
+        base_url = SONAR_URL,
+        token    = args.token,
+        cert_pem = CERT_PEM,
     )
 
     print("\n🔍 SonarQube Findings Exporter")
