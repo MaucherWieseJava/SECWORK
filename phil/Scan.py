@@ -7,12 +7,18 @@ from datetime import datetime
 import requests
 
 FORTIFY_SSC_URL = "https://fortify.ssc.your-company.com/ssc"
-CERT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "certificate.pem")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CLIENT_CERT = os.path.join(BASE_DIR, "certificate.pem")
+CA_BUNDLE = os.path.join(BASE_DIR, "ca-bundle.crt")
 
 
 def get_session(api_key):
     session = requests.Session()
-    session.verify = CERT_FILE
+    session.cert = CLIENT_CERT
+    if os.path.isfile(CA_BUNDLE):
+        session.verify = CA_BUNDLE
+    else:
+        session.verify = True
     session.headers.update({
         "Authorization": f"FortifyToken {api_key}",
         "Accept": "application/json",
@@ -229,8 +235,8 @@ def main():
     parser.add_argument("--report", action="store_true", help="Generate HTML report after scans complete")
     args = parser.parse_args()
 
-    if not os.path.isfile(CERT_FILE):
-        print(f"Certificate not found: {CERT_FILE}")
+    if not os.path.isfile(CLIENT_CERT):
+        print(f"Client certificate not found: {CLIENT_CERT}")
         sys.exit(1)
 
     session = get_session(args.api_key)
